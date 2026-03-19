@@ -1,23 +1,19 @@
-1 .  ʹ�����ɭ�ֺ�mRMR��������ѡ��: http://blog.csdn.net/wtq1993/article/details/51540321
-     ���ɭ�ֺ�mRMR����ѡ��:http://www.tuicool.com/articles/FBRF7bq
-     ʹ�þ�����https://github.com/csuldw/MachineLearning/tree/master/mRMR 
-	 combine_f195.data -t 0.0001 -s 1000000 -v 1000 -n 42 > result.out  
-	 
-	 Usage: mrmr_osx -i <dataset> -t <threshold> [optional arguments]
-         -i <dataset>    .CSV file containing M rows and N columns, row - sample, column - variable/attribute.
-         -t <threshold> a float number of the discretization threshold#��ɢ����ֵ; non-spec ifying this parameter means no discretizaton (i.e. data is already integer); 0 to make binarization.
-		 ########     threshold=mean+/-t*std      #######
-         -n <number of features>   a natural number, default is 50.
-         -m <selection method>    either "MID" or "MIQ" (Capital case), default is MID.
-         -s <MAX number of samples>   a natural number, default is 1000. Note that if you don't have or don't need big memory, set this value small, as this program will use this value to pre-allocate memory in data file reading.
-         -v <MAX number of variables/attibutes in data>   a natural number, default is 10000. Note that if you don't have or don't need big memory, set this value small, as this program will use this value to pre-allocate memory in data file reading.
-         [-h] print this message.
-	 
-2. ���������̡�����ѡ��mRMR�㷨����:http://www.jianshu.com/p/04d965e35b6d
+本文件夹目前包含以下脚本：
+F-score.py：基于 F-score 的特征排序。
+FscoretoCSV.py：按照 F-score 排序结果重排原始 CSV。
+ReliefF.py：基于 ReliefF 的特征重要性排序。
+ReliefFtoCSV.py：按照 ReliefF 排序结果重排原始 CSV。
+ANOVA.py：基于方差分析（ANOVA）的特征排序。
+ANOVAtoSVM.py：将 ANOVA 排序结果转换为指定格式。
+Binomial.py：基于二项检验的二分类特征排序。
+Binomial6.py：基于两两类别比较 + Fisher 方法合并 p 值的多分类特征排序。
+BinomialtoCSV.py：按照 Binomial 排序结果重排原始 CSV。
+SVMtoCSV.py：将 SVM 格式文件转换为 CSV 格式。
+这些脚本的用途和输入输出方式可从代码中的 Usage 说明直接查看。
 
+大多数脚本默认输入为 CSV 文件，格式如下：
 
-����1:mrmr_win32.exe -i 0.1_24_4_n_CpG.csv -t 0.001 -n 402 -s 5387 -v 402 > 1ResultMRMR.txt
-
-����2:mrmr_win32.exe -i 0.1_24_4_n_CpG.csv -t 0 -n 402 -m MIQ -s 5387 -v 402 > 2ResultMRMR.txt
-
-����3:mrmr_win32.exe -i 423.csv -t 0 -n 423 -s 5387 -v 423 > 423ResultMRMR.txt
+```csv
+class,feature1,feature2,feature3,...
+0,0.12,0.35,0.67,...
+1,0.22,0.41,0.58,...
