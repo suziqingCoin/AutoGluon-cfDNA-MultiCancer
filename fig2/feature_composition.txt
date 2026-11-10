@@ -1,0 +1,6 @@
+Cancer	EM	CNA	TMD	GWMD	GWFP	FLEN	Selected_features	EM_percent	Source
+Lung	48	6	3	0	19	15	91	52.74725274725275	ReliefF/Lung_sample_ReliefFSorted_selected91.csv
+Breast	106	9	2	2	0	0	119	89.07563025210085	ReliefF/breast_sample_ReliefFSorted_selected119.csv
+Colorectal	81	50	1	2	8	7	149	54.36241610738255	Fscore/CRC_sample_FscoreSorted_selected149.csv
+Liver	7	0	3	0	0	1	11	63.63636363636363	ReliefF/Liver_sample_ReliefFSorted_selected11.csv
+Gastric	21	0	5	0	1	0	27	77.77777777777779	ReliefF/Gastric_sample_ReliefFSorted_selected27.csv

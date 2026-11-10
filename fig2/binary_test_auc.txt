@@ -1,0 +1,6 @@
+Cancer	Model	Model_ID	Test_AUC	Original_cases	Source
+Lung	RandomForest	RandomForest_BAG_L1	0.9747474747474748	136	Lung_cancer/Lung_leaderboard_ReliefF.csv
+Breast	NeuralNetFastAI	NeuralNetFastAI_BAG_L1	0.9614814814814816	223	breast_cancer/breast_leaderboard_ReliefF.csv
+Colorectal	WeightedEnsemble	WeightedEnsemble_L2	0.9833984375	159	CRC_cancer/CRC_leaderboard_Fscore.csv
+Liver	RandomForest	RandomForest_BAG_L1	0.9922948771345272	122	Liver_cancer/Liver_leaderboard_ReliefF.csv
+Gastric	WeightedEnsemble	WeightedEnsemble_L2	0.9782051282051282	98	Gastric_cancer/Gastric_leaderboard_ReliefF.csv
