@@ -1,0 +1,4 @@
+task,fold,method,k,model,inner_validation_AUC
+lung,0,ReliefF,112,WeightedEnsemble_L2,0.9139414802065404
+lung,1,ReliefF,32,WeightedEnsemble_L2,0.8812121212121212
+lung,2,Binomial,29,WeightedEnsemble_L2,0.8812121212121212

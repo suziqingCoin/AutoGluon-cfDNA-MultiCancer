@@ -1,0 +1,12 @@
+{
+  "n_records": 1418,
+  "n_unique_IDs": 1418,
+  "label_counts": {
+    "0": 1240,
+    "1": 178
+  },
+  "X_val_rows": 0,
+  "advanced_API": "AutoGluon 1.1.1 refit_full(X=transformed_target_train,y=encoded_labels,X_val=empty,y_val=empty)",
+  "feature_generator_fit": "inner_training (AutoGluon fit may use unlabeled inner validation for feature generation)",
+  "sample_weight_column": null
+}

@@ -1,0 +1,2 @@
+task,task_cn,method,model,k,ranking_fit_n,inner_validation_n,final_training_n,test_n,validation_AUC,validation_AUPRC,validation_Recall,validation_Specificity
+liver,肝癌,ReliefF,WeightedEnsemble_L2,19,1069,268,1337,335,0.9300403225806452,0.6797049608499188,0.35,1.0

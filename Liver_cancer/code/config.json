@@ -1,0 +1,16 @@
+{
+  "task": "liver",
+  "folder": "Liver_cancer",
+  "strategy": "none",
+  "method": "ReliefF",
+  "k": 19,
+  "model": "WeightedEnsemble_L2",
+  "selected_on": "inner_validation_only",
+  "prediction_class_order": [
+    "Healthy",
+    "Liver_cancer"
+  ],
+  "new_training_performed": false,
+  "raw_data_environment": "CFDNA_RAW",
+  "public_patient_data": false
+}

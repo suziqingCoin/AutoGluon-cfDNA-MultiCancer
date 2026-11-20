@@ -1,0 +1,27 @@
+{
+  "k": 19,
+  "features": [
+    "MOTIF_END_TGCC",
+    "MOTIF_END_TGCT",
+    "MOTIF_END_TGCA",
+    "TMD_124",
+    "flen_185",
+    "flen_184",
+    "flen_178",
+    "flen_186",
+    "flen_177",
+    "flen_179",
+    "MOTIF_END_TGTT",
+    "flen_183",
+    "flen_180",
+    "flen_187",
+    "MOTIF_END_TGAT",
+    "flen_182",
+    "flen_181",
+    "flen_152",
+    "flen_151"
+  ],
+  "ranking_fit_n": 1069,
+  "validation_xgb_auc": 0.895866935483871,
+  "cap": 19
+}

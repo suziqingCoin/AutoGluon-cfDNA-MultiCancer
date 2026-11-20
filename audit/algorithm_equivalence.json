@@ -1,0 +1,186 @@
+{
+  "status": "PASS",
+  "scientific_function_checks": [
+    {
+      "file": "feature_screen/none/none_experiment.py",
+      "function": "seed",
+      "original_relative_source": "Statistical_Revision_Comment1/Final_NoResampling/Lung_cancer/code/shared_source/comparison_scripts/experiment.py",
+      "AST_identical": true
+    },
+    {
+      "file": "feature_screen/none/none_experiment.py",
+      "function": "score",
+      "original_relative_source": "Statistical_Revision_Comment1/Final_NoResampling/Lung_cancer/code/shared_source/comparison_scripts/experiment.py",
+      "AST_identical": true
+    },
+    {
+      "file": "feature_screen/none/none_experiment.py",
+      "function": "choose",
+      "original_relative_source": "Statistical_Revision_Comment1/Final_NoResampling/Lung_cancer/code/shared_source/comparison_scripts/experiment.py",
+      "AST_identical": true
+    },
+    {
+      "file": "feature_screen/none/none_experiment.py",
+      "function": "probs",
+      "original_relative_source": "Statistical_Revision_Comment1/Final_NoResampling/Lung_cancer/code/shared_source/comparison_scripts/experiment.py",
+      "AST_identical": true
+    },
+    {
+      "file": "feature_screen/none/none_experiment.py",
+      "function": "optimization",
+      "original_relative_source": "Statistical_Revision_Comment1/Final_NoResampling/Lung_cancer/code/shared_source/comparison_scripts/experiment.py",
+      "AST_identical": true
+    },
+    {
+      "file": "feature_screen/none/none_experiment.py",
+      "function": "trace_sampling",
+      "original_relative_source": "Statistical_Revision_Comment1/Final_NoResampling/Lung_cancer/code/shared_source/comparison_scripts/experiment.py",
+      "AST_identical": true
+    },
+    {
+      "file": "feature_screen/none/none_experiment.py",
+      "function": "exact_refit",
+      "original_relative_source": "Statistical_Revision_Comment1/Final_NoResampling/Lung_cancer/code/shared_source/comparison_scripts/experiment.py",
+      "AST_identical": true
+    },
+    {
+      "file": "feature_screen/none/none_experiment.py",
+      "function": "export_pred",
+      "original_relative_source": "Statistical_Revision_Comment1/Final_NoResampling/Lung_cancer/code/shared_source/comparison_scripts/experiment.py",
+      "AST_identical": true
+    },
+    {
+      "file": "feature_screen/none/none_experiment.py",
+      "function": "run_task",
+      "original_relative_source": "Statistical_Revision_Comment1/Final_NoResampling/Lung_cancer/code/shared_source/comparison_scripts/experiment.py",
+      "AST_identical": true
+    },
+    {
+      "file": "feature_screen/none/feature_rankings.py",
+      "function": "rank",
+      "original_relative_source": "Statistical_Revision_Comment1/Final_NoResampling/Lung_cancer/code/shared_source/comparison_scripts/feature_rankings.py",
+      "AST_identical": true
+    },
+    {
+      "file": "nested_loocv/src/fold.py",
+      "function": "valid",
+      "original_relative_source": "elife/nested_loocv_validation/src/fold.py",
+      "AST_identical": true
+    },
+    {
+      "file": "nested_loocv/src/fold.py",
+      "function": "run",
+      "original_relative_source": "elife/nested_loocv_validation/src/fold.py",
+      "AST_identical": true
+    },
+    {
+      "file": "nested_loocv/src/feature_rankings.py",
+      "function": "rank",
+      "original_relative_source": "elife/nested_loocv_validation/src/feature_rankings.py",
+      "AST_identical": true
+    },
+    {
+      "file": "nested_loocv/src/report.py",
+      "function": "ci",
+      "original_relative_source": "elife/nested_loocv_validation/src/report.py",
+      "AST_identical": true
+    },
+    {
+      "file": "nested_loocv/src/report.py",
+      "function": "binary_ci",
+      "original_relative_source": "elife/nested_loocv_validation/src/report.py",
+      "AST_identical": true
+    },
+    {
+      "file": "nested_loocv/src/report.py",
+      "function": "boot",
+      "original_relative_source": "elife/nested_loocv_validation/src/report.py",
+      "AST_identical": true
+    },
+    {
+      "file": "nested_loocv/src/report.py",
+      "function": "stage",
+      "original_relative_source": "elife/nested_loocv_validation/src/report.py",
+      "AST_identical": true
+    },
+    {
+      "file": "nested_loocv/src/report.py",
+      "function": "threshold",
+      "original_relative_source": "elife/nested_loocv_validation/src/report.py",
+      "AST_identical": true
+    },
+    {
+      "file": "nested_loocv/src/report.py",
+      "function": "task_report",
+      "original_relative_source": "elife/nested_loocv_validation/src/report.py",
+      "AST_identical": true
+    },
+    {
+      "file": "nested_loocv/src/report.py",
+      "function": "combine",
+      "original_relative_source": "elife/nested_loocv_validation/src/report.py",
+      "AST_identical": true
+    },
+    {
+      "file": "nested_loocv/src/protocol.py",
+      "function": "dump",
+      "original_relative_source": "elife/nested_loocv_validation/src/protocol.py",
+      "AST_identical": true
+    },
+    {
+      "file": "nested_loocv/src/protocol.py",
+      "function": "sha",
+      "original_relative_source": "elife/nested_loocv_validation/src/protocol.py",
+      "AST_identical": true
+    },
+    {
+      "file": "nested_loocv/src/protocol.py",
+      "function": "raw_sha",
+      "original_relative_source": "elife/nested_loocv_validation/src/protocol.py",
+      "AST_identical": true
+    },
+    {
+      "file": "nested_loocv/src/protocol.py",
+      "function": "seed",
+      "original_relative_source": "elife/nested_loocv_validation/src/protocol.py",
+      "AST_identical": true
+    },
+    {
+      "file": "nested_loocv/src/protocol.py",
+      "function": "load",
+      "original_relative_source": "elife/nested_loocv_validation/src/protocol.py",
+      "AST_identical": true
+    },
+    {
+      "file": "nested_loocv/src/protocol.py",
+      "function": "score",
+      "original_relative_source": "elife/nested_loocv_validation/src/protocol.py",
+      "AST_identical": true
+    },
+    {
+      "file": "nested_loocv/src/protocol.py",
+      "function": "choose",
+      "original_relative_source": "elife/nested_loocv_validation/src/protocol.py",
+      "AST_identical": true
+    },
+    {
+      "file": "nested_loocv/src/protocol.py",
+      "function": "optimize",
+      "original_relative_source": "elife/nested_loocv_validation/src/protocol.py",
+      "AST_identical": true
+    },
+    {
+      "file": "nested_loocv/src/protocol.py",
+      "function": "family",
+      "original_relative_source": "elife/nested_loocv_validation/src/protocol.py",
+      "AST_identical": true
+    }
+  ],
+  "modified_functions": {
+    "holdout_context_run": "prior local split-file set comparison replaced by the same split SHA256 commitments; unreachable class_weight branches removed; candidate count generalized from 60 to strategies*4*5",
+    "holdout_prepare": "none-only guard; identical reset_index and unit trace weight for none",
+    "nested_signature": "read source files from SOURCE_ROOT when private output root differs",
+    "nested_clinical": "clinical workbook path comes from CFDNA_CLINICAL; same read/normalize/join logic"
+  },
+  "note": "AST identity proves retained function bodies, not a new end-to-end training replication"
+}

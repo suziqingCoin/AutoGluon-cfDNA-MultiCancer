@@ -1,0 +1,20 @@
+{
+  "task": "pan6",
+  "folder": "pancancer",
+  "strategy": "none",
+  "method": "ReliefF",
+  "k": 20,
+  "model": "NeuralNetFastAI",
+  "selected_on": "inner_validation_only",
+  "prediction_class_order": [
+    "Healthy",
+    "Breast",
+    "CRC",
+    "Gastric",
+    "Liver",
+    "Lung"
+  ],
+  "new_training_performed": false,
+  "raw_data_environment": "CFDNA_RAW",
+  "public_patient_data": false
+}

@@ -1,0 +1,7 @@
+True_class,Healthy,Breast,CRC,Gastric,Liver,Lung
+Healthy,299,5,1,3,0,2
+Breast,21,12,5,1,5,1
+CRC,8,8,11,2,0,3
+Gastric,7,3,1,6,2,1
+Liver,6,0,2,0,15,1
+Lung,12,2,4,1,3,5

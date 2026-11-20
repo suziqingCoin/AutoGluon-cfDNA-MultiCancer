@@ -1,0 +1,28 @@
+{
+  "k": 20,
+  "features": [
+    "MOTIF_END_TGCC",
+    "MOTIF_END_TGCT",
+    "MOTIF_END_TGCA",
+    "MOTIF_END_TGAC",
+    "MOTIF_END_TGTT",
+    "MOTIF_END_TCTG",
+    "MOTIF_END_TGAT",
+    "MOTIF_END_ATAT",
+    "MOTIF_END_TGAG",
+    "MOTIF_END_AAAT",
+    "MOTIF_END_CAAT",
+    "MOTIF_END_CAAA",
+    "GWFP_long_21:45000001-48129895",
+    "flen_185",
+    "flen_184",
+    "GWFP_long_17:80000001-81195210",
+    "flen_186",
+    "GWFP_long_14:100000001-105000000",
+    "MOTIF_END_ATAA",
+    "MOTIF_END_TGTC"
+  ],
+  "ranking_fit_n": 1464,
+  "validation_xgb_auc": 0.8749342817128907,
+  "cap": 100
+}

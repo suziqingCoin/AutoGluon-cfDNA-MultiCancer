@@ -1,0 +1,58 @@
+[
+  {
+    "model": "XGBoost_FULL",
+    "n_actual_fit_rows": 1830,
+    "y_counts": {
+      "0": 1240,
+      "1": 178,
+      "2": 127,
+      "5": 109,
+      "4": 98,
+      "3": 78
+    },
+    "weight_min": null,
+    "weight_max": null
+  },
+  {
+    "model": "LightGBM_FULL",
+    "n_actual_fit_rows": 1830,
+    "y_counts": {
+      "0": 1240,
+      "1": 178,
+      "2": 127,
+      "5": 109,
+      "4": 98,
+      "3": 78
+    },
+    "weight_min": null,
+    "weight_max": null
+  },
+  {
+    "model": "NeuralNetFastAI_FULL",
+    "n_actual_fit_rows": 1830,
+    "y_counts": {
+      "0": 1240,
+      "1": 178,
+      "2": 127,
+      "5": 109,
+      "4": 98,
+      "3": 78
+    },
+    "weight_min": null,
+    "weight_max": null
+  },
+  {
+    "model": "RandomForest_FULL",
+    "n_actual_fit_rows": 1830,
+    "y_counts": {
+      "0": 1240,
+      "1": 178,
+      "2": 127,
+      "5": 109,
+      "4": 98,
+      "3": 78
+    },
+    "weight_min": null,
+    "weight_max": null
+  }
+]

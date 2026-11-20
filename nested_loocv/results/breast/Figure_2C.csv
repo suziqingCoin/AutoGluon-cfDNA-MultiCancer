@@ -1,0 +1,2 @@
+task,n,n_controls,n_cancer,AUC,AUC_CI_low,AUC_CI_high,AUPRC,AUPRC_CI_low,AUPRC_CI_high,Accuracy,Precision,Recall,F1,Specificity,bootstrap_replicates,CI_note,status
+breast,1773,1550,223,0.9552003471719948,0.9420824533487631,0.9669753363228699,0.8151893210009846,0.7744371436929561,0.8569737196254056,0.9362662154540327,0.8273809523809523,0.6233183856502242,0.710997442455243,0.9812903225806452,2000,Conditional on pooled fitted OOF predictions; excludes full model training/selection uncertainty and overlapping-fold dependence.,complete

@@ -1,0 +1,14 @@
+{
+  "inner_training": {
+    "n": 1134,
+    "sha256": "9b6f4dac19384ebef29a87dbfd00154deaa12a4b5634d2525c53889b942d9187"
+  },
+  "inner_validation": {
+    "n": 284,
+    "sha256": "62551a95d566768c5907aabf30df7dac46b62d0c18b3c8064837ab59e072bd5d"
+  },
+  "test": {
+    "n": 355,
+    "sha256": "d5ab42ad94899f4364bf20ce7cae2b3da408c2afd7fc68425ac826ff7b6d6ee2"
+  }
+}

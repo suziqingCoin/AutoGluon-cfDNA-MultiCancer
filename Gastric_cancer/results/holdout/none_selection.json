@@ -1,0 +1,15 @@
+{
+  "AUC": 0.9319556451612903,
+  "AUPRC": 0.6390954647458598,
+  "Recall": 0.3125,
+  "Specificity": 1.0,
+  "Accuracy": 0.9583333333333334,
+  "Precision": 1.0,
+  "F1": 0.47619047619047616,
+  "task": "gastric",
+  "context": "holdout",
+  "strategy": "none",
+  "method": "Fscore",
+  "model": "WeightedEnsemble_L2",
+  "k": 10
+}

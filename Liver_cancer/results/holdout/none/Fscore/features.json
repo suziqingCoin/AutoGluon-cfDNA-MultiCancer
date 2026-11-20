@@ -1,0 +1,9 @@
+{
+  "k": 1,
+  "features": [
+    "flen_186"
+  ],
+  "ranking_fit_n": 1069,
+  "validation_xgb_auc": 0.7608870967741935,
+  "cap": 39
+}

@@ -1,0 +1,2 @@
+task,n,n_controls,n_cancer,AUC,AUC_CI_low,AUC_CI_high,AUPRC,AUPRC_CI_low,AUPRC_CI_high,Accuracy,Precision,Recall,F1,Specificity,bootstrap_replicates,CI_note,status
+crc,1709,1550,159,0.9530898762426455,0.9273440860215053,0.9737457902211403,0.8782945641249291,0.8330116397409704,0.9167236702710666,0.9684025746050322,0.9565217391304348,0.6918238993710691,0.8029197080291971,0.9967741935483871,2000,Conditional on pooled fitted OOF predictions; excludes full model training/selection uncertainty and overlapping-fold dependence.,complete

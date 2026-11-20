@@ -1,0 +1,2 @@
+task,task_cn,method,model,k,ranking_fit_n,inner_validation_n,final_training_n,test_n,validation_AUC,validation_AUPRC,validation_Recall,validation_Specificity
+breast,乳腺癌,ANOVA,WeightedEnsemble_L2,151,1134,284,1418,355,0.9685259856630823,0.8800210161754773,0.5555555555555556,1.0

@@ -1,0 +1,11 @@
+task,task_cn,method,rank,feature,family,ranking_score,score_type,p_value
+gastric,胃癌,Fscore,1,MOTIF_END_CAAA,EM,1.0084356403711254,F_score,
+gastric,胃癌,Fscore,2,MOTIF_END_CAGT,EM,0.8999588879883537,F_score,
+gastric,胃癌,Fscore,3,MOTIF_END_CAAG,EM,0.8493121516992728,F_score,
+gastric,胃癌,Fscore,4,MOTIF_END_CAAT,EM,0.8103746418620472,F_score,
+gastric,胃癌,Fscore,5,MOTIF_END_CAGA,EM,0.7356091872641921,F_score,
+gastric,胃癌,Fscore,6,MOTIF_END_CAAC,EM,0.7181942335126685,F_score,
+gastric,胃癌,Fscore,7,MOTIF_END_TCTG,EM,0.6833374238701102,F_score,
+gastric,胃癌,Fscore,8,MOTIF_END_TAGA,EM,0.6607365425602624,F_score,
+gastric,胃癌,Fscore,9,MOTIF_END_TGGC,EM,0.6563904497567151,F_score,
+gastric,胃癌,Fscore,10,MOTIF_END_TGCC,EM,0.6516819987213822,F_score,

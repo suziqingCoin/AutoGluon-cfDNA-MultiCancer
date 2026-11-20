@@ -1,0 +1,4 @@
+task,fold,method,k,model,inner_validation_AUC
+gastric,0,ANOVA,3,WeightedEnsemble_L2,0.9228915662650602
+gastric,1,Fscore,16,WeightedEnsemble_L2,0.9909638554216867
+gastric,2,Fscore,9,WeightedEnsemble_L2,0.983132530120482

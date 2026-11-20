@@ -1,0 +1,4 @@
+AUC,AUPRC,Recall,Specificity,Accuracy,Precision,F1,task,context,strategy,method,model,k,selected_for_strategy,historical_cross_strategy_selected,macro_AUC,macro_AUPRC,cancer_detection_Recall,cancer_exact_type_Recall,selected_final_none
+0.9093052680009202,0.7098056953081824,0.6190476190476191,0.9710144927536232,0.9385964912280702,0.6842105263157895,0.65,crc,nested_fold_0,none,ReliefF,WeightedEnsemble_L2,9,True,True,,,,,True
+0.9359198153049156,0.8341778233184004,0.627906976744186,0.9951573849878934,0.9605263157894736,0.9310344827586208,0.75,crc,nested_fold_1,none,Fscore,WeightedEnsemble_L2,163,True,False,,,,,True
+0.9391790614550906,0.775779314123906,0.5238095238095238,0.9927360774818402,0.9494505494505494,0.88,0.6567164179104478,crc,nested_fold_2,none,Fscore,WeightedEnsemble_L2,88,True,False,,,,,True

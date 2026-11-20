@@ -1,0 +1,10 @@
+{
+  "k": 2,
+  "features": [
+    "MOTIF_END_TGCA",
+    "MOTIF_END_TGAC"
+  ],
+  "ranking_fit_n": 1054,
+  "validation_xgb_auc": 0.8500504032258065,
+  "cap": 39
+}

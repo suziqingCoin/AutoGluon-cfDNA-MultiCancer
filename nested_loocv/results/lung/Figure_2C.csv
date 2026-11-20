@@ -1,0 +1,2 @@
+task,n,n_controls,n_cancer,AUC,AUC_CI_low,AUC_CI_high,AUPRC,AUPRC_CI_low,AUPRC_CI_high,Accuracy,Precision,Recall,F1,Specificity,bootstrap_replicates,CI_note,status
+lung,1686,1550,136,0.9309487666034155,0.9090640417457305,0.9500432874762809,0.7077792495153726,0.6429224709246067,0.7709906950723808,0.9489916963226572,0.8125,0.47794117647058826,0.6018518518518519,0.9903225806451613,2000,Conditional on pooled fitted OOF predictions; excludes full model training/selection uncertainty and overlapping-fold dependence.,complete

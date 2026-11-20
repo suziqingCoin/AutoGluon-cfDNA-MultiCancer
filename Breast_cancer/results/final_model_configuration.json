@@ -1,0 +1,12 @@
+{
+  "task": "breast",
+  "strategy": "none",
+  "method": "ANOVA",
+  "k": 151,
+  "internally_selected_model": "WeightedEnsemble_L2",
+  "refit_model": "WeightedEnsemble_L2_FULL",
+  "hyperparameters_and_trained_parameters": "holdout/none/ANOVA/fitted_model_parameters.json",
+  "inner_parameters": "holdout/none/ANOVA/fitted_inner_model_parameters.json",
+  "selection": "holdout/none_selection.json",
+  "raw_data_environment": "CFDNA_RAW"
+}

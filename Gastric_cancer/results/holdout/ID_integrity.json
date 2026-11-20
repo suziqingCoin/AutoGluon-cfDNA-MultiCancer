@@ -1,0 +1,13 @@
+{
+  "task": "gastric",
+  "context": "holdout",
+  "inner_train_validation_overlap": 0,
+  "inner_train_eval_overlap": 0,
+  "validation_eval_overlap": 0,
+  "train_eval_overlap": 0,
+  "n_original_train": 1318,
+  "n_original_evaluation": 330,
+  "n_inner_train": 1054,
+  "n_inner_validation": 264,
+  "matches_previous_split": true
+}

@@ -1,0 +1,4 @@
+task,fold,method,k,model,inner_validation_AUC
+crc,0,ReliefF,9,WeightedEnsemble_L2,0.9241672572643514
+crc,1,Fscore,163,WeightedEnsemble_L2,0.9929128277817152
+crc,2,Fscore,88,WeightedEnsemble_L2,0.9815733522324592

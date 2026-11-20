@@ -1,0 +1,7 @@
+stage,Diagnosis,before_records,before_unique_IDs,after_records,after_unique_IDs,effective_multiplier,weight_min,weight_max
+final_training,Lung cancer,109,109,109,109,1.0,1.0,1.0
+final_training,Control,1240,1240,1240,1240,1.0,1.0,1.0
+final_training,Liver cancer,98,98,98,98,1.0,1.0,1.0
+final_training,Gastric cancer,78,78,78,78,1.0,1.0,1.0
+final_training,CRC cancer,127,127,127,127,1.0,1.0,1.0
+final_training,Breast cancer,178,178,178,178,1.0,1.0,1.0

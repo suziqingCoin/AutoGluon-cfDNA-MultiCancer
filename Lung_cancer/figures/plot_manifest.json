@@ -1,0 +1,174 @@
+[
+  {
+    "folder": "Lung_cancer",
+    "names": [
+      "AUC_vs_FeatureCount_ReliefF"
+    ],
+    "method": "ReliefF",
+    "script": "code/private_replay/plot_s1.py",
+    "original_notebook": "<STUDY_SOURCE>/Lung_cancer/Lung_feature_screening.ipynb",
+    "k": 149,
+    "canvas_inches": [
+      9.0,
+      7.0
+    ],
+    "font": "Arial",
+    "font_sizes_pt": [
+      10.0,
+      15.0,
+      19.0,
+      24.0
+    ],
+    "outputs": [
+      "figures/AUC_vs_FeatureCount_ReliefF.pdf"
+    ],
+    "notes": "按用户要求，ReliefF_PR已由历史precision/recall中位数散点替换为真正的Test PR曲线：横轴Recall、纵轴Precision，五模型使用同一338位Test患者及ReliefF/K149面板。阶梯曲线来自原始预测概率，不平滑，不改选模型；图例AUPRC采用average precision（AP），并显示阳性比例27/338的无技巧基线。样式与同目录ROC图一致：模型曲线5pt、Random虚线4pt、边框3pt、刻度15pt、轴标题19pt、图标题24pt、无网格；同一模型使用相同配色。按用户要求，无边框14pt图例置于图内左下角。完整PR坐标另存figures/data/ReliefF/PR_coordinates.csv；旧散点定义仅作为历史溯源。",
+    "prediction_source_policy": "only same-task none; apparent final training is not internal validation; no Test-based model selection",
+    "public_data": [
+      "figures/data/ReliefF/K_optimization.csv",
+      "figures/data/ReliefF/selected_feature_scores.csv"
+    ],
+    "private_inputs_not_distributed": [],
+    "notebook_reference_scope": "Historical provenance only; runtime uses the semantic function above",
+    "function": "plot_feature_count_curve",
+    "kwargs": {},
+    "supplementary_figure": "S1",
+    "panel": null,
+    "requires_private_data": false,
+    "source_notebook": "Lung_cancer/Lung_feature_screening.ipynb",
+    "source_cell": 28,
+    "manuscript_output_status": "Retained original PDF; not overwritten by this refactor",
+    "replay_validation": "Executed on real public feature/K inputs; PNG pixels equal the pre-refactor source rendering"
+  },
+  {
+    "folder": "Lung_cancer",
+    "names": [
+      "Lung-ReliefF-Proportion of Biomaker_Optimized"
+    ],
+    "method": "ReliefF",
+    "script": "code/private_replay/plot_s1.py",
+    "original_notebook": "<STUDY_SOURCE>/Lung_cancer/Lung_cancer.ipynb",
+    "k": 149,
+    "canvas_inches": [
+      10.0,
+      8.0
+    ],
+    "font": "Arial",
+    "font_sizes_pt": [
+      17.0,
+      19.0,
+      24.0
+    ],
+    "outputs": [
+      "figures/Lung-ReliefF-Proportion of Biomaker_Optimized.pdf"
+    ],
+    "notes": "按用户要求，ReliefF_PR已由历史precision/recall中位数散点替换为真正的Test PR曲线：横轴Recall、纵轴Precision，五模型使用同一338位Test患者及ReliefF/K149面板。阶梯曲线来自原始预测概率，不平滑，不改选模型；图例AUPRC采用average precision（AP），并显示阳性比例27/338的无技巧基线。样式与同目录ROC图一致：模型曲线5pt、Random虚线4pt、边框3pt、刻度15pt、轴标题19pt、图标题24pt、无网格；同一模型使用相同配色。按用户要求，无边框14pt图例置于图内左下角。完整PR坐标另存figures/data/ReliefF/PR_coordinates.csv；旧散点定义仅作为历史溯源。",
+    "prediction_source_policy": "only same-task none; apparent final training is not internal validation; no Test-based model selection",
+    "public_data": [
+      "figures/data/ReliefF/K_optimization.csv",
+      "figures/data/ReliefF/selected_feature_scores.csv"
+    ],
+    "private_inputs_not_distributed": [],
+    "notebook_reference_scope": "Historical provenance only; runtime uses the semantic function above",
+    "function": "plot_feature_family_composition",
+    "kwargs": {},
+    "supplementary_figure": "S1",
+    "panel": null,
+    "requires_private_data": false,
+    "source_notebook": "Lung_cancer/Lung_cancer.ipynb",
+    "source_cell": 30,
+    "manuscript_output_status": "Retained original PDF; not overwritten by this refactor",
+    "replay_validation": "Executed on real public feature/K inputs; PNG pixels equal the pre-refactor source rendering"
+  },
+  {
+    "folder": "Lung_cancer",
+    "names": [
+      "ReliefF"
+    ],
+    "method": "ReliefF",
+    "script": "code/private_replay/plot_s1.py",
+    "original_notebook": "<STUDY_SOURCE>/Lung_cancer/Lung_cancer.ipynb",
+    "k": 149,
+    "canvas_inches": [
+      10.0,
+      7.0
+    ],
+    "font": "Arial",
+    "font_sizes_pt": [
+      10.0,
+      14.0,
+      15.0,
+      19.0,
+      24.0
+    ],
+    "outputs": [
+      "figures/ReliefF.pdf"
+    ],
+    "notes": "按用户要求，ReliefF_PR已由历史precision/recall中位数散点替换为真正的Test PR曲线：横轴Recall、纵轴Precision，五模型使用同一338位Test患者及ReliefF/K149面板。阶梯曲线来自原始预测概率，不平滑，不改选模型；图例AUPRC采用average precision（AP），并显示阳性比例27/338的无技巧基线。样式与同目录ROC图一致：模型曲线5pt、Random虚线4pt、边框3pt、刻度15pt、轴标题19pt、图标题24pt、无网格；同一模型使用相同配色。按用户要求，无边框14pt图例置于图内左下角。完整PR坐标另存figures/data/ReliefF/PR_coordinates.csv；旧散点定义仅作为历史溯源。",
+    "prediction_source_policy": "only same-task none; apparent final training is not internal validation; no Test-based model selection",
+    "public_data": [
+      "figures/data/ReliefF/K_optimization.csv",
+      "figures/data/ReliefF/ROC_coordinates.csv",
+      "figures/data/ReliefF/selected_feature_scores.csv"
+    ],
+    "private_inputs_not_distributed": [
+      "results/holdout/none/ReliefF/evaluation_predictions_*.csv",
+      "results/holdout/patient_split.csv",
+      "results/recovered_training_predictions/ReliefF/apparent_training_predictions_*.csv"
+    ],
+    "notebook_reference_scope": "Historical provenance only; runtime uses the semantic function above",
+    "function": "plot_test_roc",
+    "kwargs": {},
+    "supplementary_figure": "S1",
+    "panel": null,
+    "requires_private_data": true,
+    "source_notebook": "Lung_cancer/Lung_cancer.ipynb",
+    "source_cell": 19,
+    "manuscript_output_status": "Retained original PDF; not overwritten by this refactor",
+    "replay_validation": "Not executed: authorized patient inputs are not distributed; body migration and input mapping checked"
+  },
+  {
+    "folder": "Lung_cancer",
+    "names": [
+      "ReliefF_PR"
+    ],
+    "method": "ReliefF",
+    "script": "code/private_replay/plot_s1.py",
+    "original_notebook": "<STUDY_SOURCE>/Lung_cancer/Lung_cancer.ipynb",
+    "k": 149,
+    "canvas_inches": [
+      10.0,
+      7.0
+    ],
+    "font": "Arial",
+    "font_sizes_pt": [
+      14.0,
+      15.0,
+      19.0,
+      24.0
+    ],
+    "outputs": [
+      "figures/ReliefF_PR.pdf"
+    ],
+    "notes": "按用户要求，ReliefF_PR已由历史precision/recall中位数散点替换为真正的Test PR曲线：横轴Recall、纵轴Precision，五模型使用同一338位Test患者及ReliefF/K149面板。阶梯曲线来自原始预测概率，不平滑，不改选模型；图例AUPRC采用average precision（AP），并显示阳性比例27/338的无技巧基线。样式与同目录ROC图一致：模型曲线5pt、Random虚线4pt、边框3pt、刻度15pt、轴标题19pt、图标题24pt、无网格；同一模型使用相同配色。按用户要求，无边框14pt图例置于图内左下角。完整PR坐标另存figures/data/ReliefF/PR_coordinates.csv；旧散点定义仅作为历史溯源。",
+    "prediction_source_policy": "only same-task none; apparent final training is not internal validation; no Test-based model selection",
+    "public_data": [
+      "figures/data/ReliefF/K_optimization.csv",
+      "figures/data/ReliefF/PR_coordinates.csv",
+      "figures/data/ReliefF/selected_feature_scores.csv"
+    ],
+    "private_inputs_not_distributed": [
+      "results/holdout/none/ReliefF/evaluation_predictions_*.csv"
+    ],
+    "notebook_reference_scope": "Historical provenance only; runtime uses the semantic function above",
+    "function": "plot_test_precision_recall",
+    "kwargs": {},
+    "supplementary_figure": "S1",
+    "panel": null,
+    "requires_private_data": true,
+    "source_notebook": "Lung_cancer/Lung_cancer.ipynb",
+    "source_cell": 20,
+    "manuscript_output_status": "Retained original PDF; not overwritten by this refactor",
+    "replay_validation": "Not executed: authorized patient inputs are not distributed; body migration and input mapping checked"
+  }
+]

@@ -1,0 +1,138 @@
+[
+  {
+    "folder": "CRC_cancer",
+    "names": [
+      "CRC-ReliefF-Barplot-BiomarkerTypes_NoGrid"
+    ],
+    "method": "ReliefF",
+    "script": "code/private_replay/plot_s3.py",
+    "original_notebook": "<STUDY_SOURCE>/CRC_cancer/CRC_cancer.ipynb",
+    "k": 121,
+    "canvas_inches": [
+      9.0,
+      6.5
+    ],
+    "font": "Arial",
+    "font_sizes_pt": [
+      10.0,
+      15.0,
+      19.0,
+      24.0
+    ],
+    "outputs": [
+      "figures/CRC-ReliefF-Barplot-BiomarkerTypes_NoGrid.pdf"
+    ],
+    "notes": "正式方法从历史F-score变为ReliefF，全部图使用ReliefF的121特征。保留现有水平分类分数散点的双面板布局；左Train为最终refit模型的表观训练预测，右Test为固定留出测试。正式图文件名已从Fscore更新为ReliefF；特征数与图内标注均为121。",
+    "prediction_source_policy": "only same-task none; apparent final training is not internal validation; no Test-based model selection",
+    "historical_names": [
+      "CRC-Fscore-Barplot-BiomarkerTypes_NoGrid"
+    ],
+    "public_data": [
+      "figures/data/ReliefF/K_optimization.csv",
+      "figures/data/ReliefF/selected_feature_scores.csv"
+    ],
+    "private_inputs_not_distributed": [],
+    "notebook_reference_scope": "Historical provenance only; runtime uses the semantic function above",
+    "function": "plot_feature_family_counts",
+    "kwargs": {},
+    "supplementary_figure": "S3",
+    "panel": null,
+    "requires_private_data": false,
+    "source_notebook": "CRC_cancer/CRC_cancer.ipynb",
+    "source_cell": 35,
+    "manuscript_output_status": "Retained original PDF; not overwritten by this refactor",
+    "replay_validation": "Executed on real public feature/K inputs; PNG pixels equal the pre-refactor source rendering"
+  },
+  {
+    "folder": "CRC_cancer",
+    "names": [
+      "AUC_vs_FeatureCount_ReliefF"
+    ],
+    "method": "ReliefF",
+    "script": "code/private_replay/plot_s3.py",
+    "original_notebook": "<STUDY_SOURCE>/CRC_cancer/CRC_feature_screening.ipynb",
+    "k": 121,
+    "canvas_inches": [
+      9.0,
+      7.0
+    ],
+    "font": "Arial",
+    "font_sizes_pt": [
+      10.0,
+      15.0,
+      19.0,
+      24.0
+    ],
+    "outputs": [
+      "figures/AUC_vs_FeatureCount_ReliefF.pdf"
+    ],
+    "notes": "正式方法从历史F-score变为ReliefF，全部图使用ReliefF的121特征。保留现有水平分类分数散点的双面板布局；左Train为最终refit模型的表观训练预测，右Test为固定留出测试。正式图文件名已从Fscore更新为ReliefF；特征数与图内标注均为121。",
+    "prediction_source_policy": "only same-task none; apparent final training is not internal validation; no Test-based model selection",
+    "historical_names": [
+      "AUC_vs_FeatureCount_Fscore"
+    ],
+    "public_data": [
+      "figures/data/ReliefF/K_optimization.csv",
+      "figures/data/ReliefF/selected_feature_scores.csv"
+    ],
+    "private_inputs_not_distributed": [],
+    "notebook_reference_scope": "Historical provenance only; runtime uses the semantic function above",
+    "function": "plot_feature_count_curve",
+    "kwargs": {},
+    "supplementary_figure": "S3",
+    "panel": null,
+    "requires_private_data": false,
+    "source_notebook": "CRC_cancer/CRC_feature_screening.ipynb",
+    "source_cell": 13,
+    "manuscript_output_status": "Retained original PDF; not overwritten by this refactor",
+    "replay_validation": "Executed on real public feature/K inputs; PNG pixels equal the pre-refactor source rendering"
+  },
+  {
+    "folder": "CRC_cancer",
+    "names": [
+      "ClassifierScore_ByModel"
+    ],
+    "method": "ReliefF",
+    "script": "code/private_replay/plot_s3.py",
+    "original_notebook": "<STUDY_SOURCE>/CRC_cancer/CRC_cancer.ipynb",
+    "k": 121,
+    "canvas_inches": [
+      18.0,
+      6.5
+    ],
+    "font": "Arial",
+    "font_sizes_pt": [
+      10.0,
+      17.0,
+      19.0
+    ],
+    "outputs": [
+      "figures/ClassifierScore_ByModel.pdf"
+    ],
+    "notes": "正式方法从历史F-score变为ReliefF，全部图使用ReliefF的121特征。保留现有水平分类分数散点的双面板布局；左Train为最终refit模型的表观训练预测，右Test为固定留出测试。正式图文件名已从Fscore更新为ReliefF；特征数与图内标注均为121。",
+    "prediction_source_policy": "only same-task none; apparent final training is not internal validation; no Test-based model selection",
+    "historical_names": [
+      "ClassifierScore_ByModel"
+    ],
+    "public_data": [
+      "figures/data/ReliefF/K_optimization.csv",
+      "figures/data/ReliefF/selected_feature_scores.csv"
+    ],
+    "private_inputs_not_distributed": [
+      "results/holdout/none/ReliefF/evaluation_predictions_*.csv",
+      "results/holdout/patient_split.csv",
+      "results/recovered_training_predictions/ReliefF/apparent_training_predictions_*.csv"
+    ],
+    "notebook_reference_scope": "Historical provenance only; runtime uses the semantic function above",
+    "function": "plot_classifier_score_strips",
+    "kwargs": {},
+    "supplementary_figure": "S3",
+    "panel": "C",
+    "requires_private_data": true,
+    "source_notebook": "CRC_cancer/CRC_cancer.ipynb",
+    "source_cell": 9,
+    "prior_replay_limitation": "An earlier packaging attempt lacked seaborn; its full traceback is retained in the internal archive.",
+    "manuscript_output_status": "Retained original PDF; not overwritten by this refactor",
+    "replay_validation": "Not executed: authorized patient inputs are not distributed; body migration and input mapping checked"
+  }
+]

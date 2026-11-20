@@ -1,0 +1,22 @@
+{
+  "k": 14,
+  "features": [
+    "CNA_1:121000001-122000000",
+    "MOTIF_END_TAGA",
+    "flen_186",
+    "flen_187",
+    "flen_185",
+    "flen_160",
+    "flen_161",
+    "flen_188",
+    "MOTIF_END_TCTG",
+    "flen_159",
+    "flen_184",
+    "flen_151",
+    "flen_152",
+    "flen_189"
+  ],
+  "ranking_fit_n": 1078,
+  "validation_xgb_auc": 0.9150476539589443,
+  "cap": 60
+}

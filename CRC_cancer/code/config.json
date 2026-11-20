@@ -1,0 +1,16 @@
+{
+  "task": "crc",
+  "folder": "CRC_cancer",
+  "strategy": "none",
+  "method": "ReliefF",
+  "k": 121,
+  "model": "NeuralNetFastAI",
+  "selected_on": "inner_validation_only",
+  "prediction_class_order": [
+    "Healthy",
+    "CRC_cancer"
+  ],
+  "new_training_performed": false,
+  "raw_data_environment": "CFDNA_RAW",
+  "public_patient_data": false
+}

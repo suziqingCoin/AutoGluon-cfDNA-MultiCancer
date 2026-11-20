@@ -1,0 +1,194 @@
+[
+  {
+    "folder": "Gastric_cancer",
+    "names": [
+      "Top_Feature_Barplot_Gastric"
+    ],
+    "method": "Fscore",
+    "script": "code/private_replay/plot_s5.py",
+    "original_notebook": "<STUDY_SOURCE>/Gastric_cancer/Gastric_cancer.ipynb",
+    "k": 10,
+    "canvas_inches": [
+      9.0,
+      7.0
+    ],
+    "font": "Arial",
+    "font_sizes_pt": [
+      13.0,
+      15.0,
+      19.0,
+      24.0
+    ],
+    "outputs": [
+      "figures/Top_Feature_Barplot_Gastric.pdf"
+    ],
+    "notes": "正式方法从历史ReliefF变为F-score，全部图使用Fscore的10特征。按用户要求改为单列水平条形图，9×7英寸画布，10个特征从上到下按分数递减。保留Arial与蓝色，横轴刻度根据实际F-score数值调整。",
+    "prediction_source_policy": "only same-task none; apparent final training is not internal validation; no Test-based model selection",
+    "historical_names": [
+      "Top_Feature_Barplot_Gastric"
+    ],
+    "public_data": [
+      "figures/data/Fscore/K_optimization.csv",
+      "figures/data/Fscore/selected_feature_scores.csv"
+    ],
+    "private_inputs_not_distributed": [],
+    "notebook_reference_scope": "Historical provenance only; runtime uses the semantic function above",
+    "function": "plot_top_feature_scores",
+    "kwargs": {},
+    "supplementary_figure": "S5",
+    "panel": null,
+    "requires_private_data": false,
+    "source_notebook": "Gastric_cancer/Gastric_cancer.ipynb",
+    "source_cell": 31,
+    "manuscript_output_status": "Retained original PDF; not overwritten by this refactor",
+    "replay_validation": "Executed on real public feature/K inputs; PNG pixels equal the pre-refactor source rendering"
+  },
+  {
+    "folder": "Gastric_cancer",
+    "names": [
+      "DeltaAUC_and_Trend_Highlight10"
+    ],
+    "method": "Fscore",
+    "script": "code/private_replay/plot_s5.py",
+    "original_notebook": "<STUDY_SOURCE>/Gastric_cancer/Gastric_feature_screening.ipynb",
+    "k": 10,
+    "canvas_inches": [
+      12.0,
+      7.0
+    ],
+    "font": "Arial",
+    "font_sizes_pt": [
+      10.0,
+      15.0,
+      19.0,
+      24.0
+    ],
+    "outputs": [
+      "figures/DeltaAUC_and_Trend_Highlight10.pdf"
+    ],
+    "notes": "正式方法从历史ReliefF变为F-score，全部图使用Fscore的10特征。按用户要求改为单列水平条形图，9×7英寸画布，10个特征从上到下按分数递减。保留Arial与蓝色，横轴刻度根据实际F-score数值调整。",
+    "prediction_source_policy": "only same-task none; apparent final training is not internal validation; no Test-based model selection",
+    "historical_names": [
+      "DeltaAUC_and_Trend_Highlight27"
+    ],
+    "public_data": [
+      "figures/data/Fscore/K_optimization.csv",
+      "figures/data/Fscore/selected_feature_scores.csv"
+    ],
+    "private_inputs_not_distributed": [],
+    "notebook_reference_scope": "Historical provenance only; runtime uses the semantic function above",
+    "function": "plot_feature_count_improvement",
+    "kwargs": {},
+    "supplementary_figure": "S5",
+    "panel": null,
+    "requires_private_data": false,
+    "source_notebook": "Gastric_cancer/Gastric_feature_screening.ipynb",
+    "source_cell": 29,
+    "manuscript_output_status": "Retained original PDF; not overwritten by this refactor",
+    "replay_validation": "Executed on real public feature/K inputs; PNG pixels equal the pre-refactor source rendering"
+  },
+  {
+    "folder": "Gastric_cancer",
+    "names": [
+      "model_performance_heatmap_test"
+    ],
+    "method": "Fscore",
+    "script": "code/private_replay/plot_s5.py",
+    "original_notebook": "<STUDY_SOURCE>/Gastric_cancer/Gastric_cancer.ipynb",
+    "k": 10,
+    "canvas_inches": [
+      12.0,
+      8.0
+    ],
+    "font": "Arial",
+    "font_sizes_pt": [
+      10.0,
+      14.0,
+      15.0,
+      24.0
+    ],
+    "outputs": [
+      "figures/model_performance_heatmap_test.pdf"
+    ],
+    "notes": "正式方法从历史ReliefF变为F-score，全部图使用Fscore的10特征。按用户要求改为单列水平条形图，9×7英寸画布，10个特征从上到下按分数递减。保留Arial与蓝色，横轴刻度根据实际F-score数值调整。",
+    "prediction_source_policy": "only same-task none; apparent final training is not internal validation; no Test-based model selection",
+    "historical_names": [
+      "model_performance_heatmap_test"
+    ],
+    "public_data": [
+      "figures/data/Fscore/K_optimization.csv",
+      "figures/data/Fscore/model_metrics_Test_and_apparent_training.csv",
+      "figures/data/Fscore/selected_feature_scores.csv"
+    ],
+    "private_inputs_not_distributed": [
+      "results/holdout/none/Fscore/evaluation_predictions_*.csv",
+      "results/holdout/patient_split.csv",
+      "results/recovered_training_predictions/Fscore/apparent_training_predictions_*.csv"
+    ],
+    "notebook_reference_scope": "Historical provenance only; runtime uses the semantic function above",
+    "function": "plot_model_metric_heatmap",
+    "kwargs": {
+      "dataset": "test"
+    },
+    "supplementary_figure": "S5",
+    "panel": null,
+    "requires_private_data": true,
+    "source_notebook": "Gastric_cancer/Gastric_cancer.ipynb",
+    "source_cell": 21,
+    "prior_replay_limitation": "An earlier packaging attempt lacked seaborn; its full traceback is retained in the internal archive.",
+    "manuscript_output_status": "Retained original PDF; not overwritten by this refactor",
+    "replay_validation": "Not executed: authorized patient inputs are not distributed; body migration and input mapping checked"
+  },
+  {
+    "folder": "Gastric_cancer",
+    "names": [
+      "model_performance_heatmap_train"
+    ],
+    "method": "Fscore",
+    "script": "code/private_replay/plot_s5.py",
+    "original_notebook": "<STUDY_SOURCE>/Gastric_cancer/Gastric_cancer.ipynb",
+    "k": 10,
+    "canvas_inches": [
+      12.0,
+      8.0
+    ],
+    "font": "Arial",
+    "font_sizes_pt": [
+      10.0,
+      14.0,
+      15.0,
+      24.0
+    ],
+    "outputs": [
+      "figures/model_performance_heatmap_train.pdf"
+    ],
+    "notes": "正式方法从历史ReliefF变为F-score，全部图使用Fscore的10特征。按用户要求改为单列水平条形图，9×7英寸画布，10个特征从上到下按分数递减。保留Arial与蓝色，横轴刻度根据实际F-score数值调整。",
+    "prediction_source_policy": "only same-task none; apparent final training is not internal validation; no Test-based model selection",
+    "historical_names": [
+      "model_performance_heatmap_train"
+    ],
+    "public_data": [
+      "figures/data/Fscore/K_optimization.csv",
+      "figures/data/Fscore/model_metrics_Test_and_apparent_training.csv",
+      "figures/data/Fscore/selected_feature_scores.csv"
+    ],
+    "private_inputs_not_distributed": [
+      "results/holdout/none/Fscore/evaluation_predictions_*.csv",
+      "results/holdout/patient_split.csv",
+      "results/recovered_training_predictions/Fscore/apparent_training_predictions_*.csv"
+    ],
+    "notebook_reference_scope": "Historical provenance only; runtime uses the semantic function above",
+    "function": "plot_model_metric_heatmap",
+    "kwargs": {
+      "dataset": "train"
+    },
+    "supplementary_figure": "S5",
+    "panel": null,
+    "requires_private_data": true,
+    "source_notebook": "Gastric_cancer/Gastric_cancer.ipynb",
+    "source_cell": 20,
+    "prior_replay_limitation": "An earlier packaging attempt lacked seaborn; its full traceback is retained in the internal archive.",
+    "manuscript_output_status": "Retained original PDF; not overwritten by this refactor",
+    "replay_validation": "Not executed: authorized patient inputs are not distributed; body migration and input mapping checked"
+  }
+]

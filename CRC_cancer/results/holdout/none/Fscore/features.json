@@ -1,0 +1,25 @@
+{
+  "k": 17,
+  "features": [
+    "MOTIF_END_TGCA",
+    "MOTIF_END_TGCC",
+    "MOTIF_END_TGCT",
+    "MOTIF_END_CAAA",
+    "MOTIF_END_CAAG",
+    "MOTIF_END_GCCT",
+    "MOTIF_END_CGCT",
+    "MOTIF_END_CAAT",
+    "MOTIF_END_TAGA",
+    "MOTIF_END_CAAC",
+    "MOTIF_END_CGCC",
+    "MOTIF_END_CAGT",
+    "MOTIF_END_TCCG",
+    "MOTIF_END_TGGT",
+    "MOTIF_END_TCTG",
+    "MOTIF_END_CGAT",
+    "MOTIF_END_CAGA"
+  ],
+  "ranking_fit_n": 1093,
+  "validation_xgb_auc": 0.9088353413654618,
+  "cap": 200
+}

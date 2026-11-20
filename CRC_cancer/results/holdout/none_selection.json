@@ -1,0 +1,15 @@
+{
+  "AUC": 0.9673895582329316,
+  "AUPRC": 0.8800702763875534,
+  "Recall": 0.8,
+  "Specificity": 0.9919678714859438,
+  "Accuracy": 0.9744525547445256,
+  "Precision": 0.9090909090909092,
+  "F1": 0.851063829787234,
+  "task": "crc",
+  "context": "holdout",
+  "strategy": "none",
+  "method": "ReliefF",
+  "model": "NeuralNetFastAI",
+  "k": 121
+}

@@ -1,0 +1,10 @@
+{
+  "k": 2,
+  "features": [
+    "TMD_343",
+    "GWMD_chr5_166"
+  ],
+  "ranking_fit_n": 1078,
+  "validation_xgb_auc": 0.7821664222873901,
+  "cap": 60
+}

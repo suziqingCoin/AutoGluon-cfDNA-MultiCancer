@@ -1,0 +1,13 @@
+{
+  "task": "crc",
+  "context": "holdout",
+  "inner_train_validation_overlap": 0,
+  "inner_train_eval_overlap": 0,
+  "validation_eval_overlap": 0,
+  "train_eval_overlap": 0,
+  "n_original_train": 1367,
+  "n_original_evaluation": 342,
+  "n_inner_train": 1093,
+  "n_inner_validation": 274,
+  "matches_previous_split": true
+}

@@ -1,0 +1,2 @@
+task,n,n_controls,n_cancer,AUC,AUC_CI_low,AUC_CI_high,AUPRC,AUPRC_CI_low,AUPRC_CI_high,Accuracy,Precision,Recall,F1,Specificity,bootstrap_replicates,CI_note,status
+liver,1672,1550,122,0.9409042834479112,0.9230401903754627,0.9573984664198836,0.6031863828314199,0.5216564070065856,0.6963178058712479,0.9485645933014354,0.7307692307692307,0.4672131147540984,0.57,0.9864516129032258,2000,Conditional on pooled fitted OOF predictions; excludes full model training/selection uncertainty and overlapping-fold dependence.,complete

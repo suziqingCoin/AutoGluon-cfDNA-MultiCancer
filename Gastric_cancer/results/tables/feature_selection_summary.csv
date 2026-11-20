@@ -1,0 +1,2 @@
+task,task_cn,method,model,k,ranking_fit_n,inner_validation_n,final_training_n,test_n,validation_AUC,validation_AUPRC,validation_Recall,validation_Specificity
+gastric,胃癌,Fscore,WeightedEnsemble_L2,10,1054,264,1318,330,0.9319556451612904,0.6390954647458598,0.3125,1.0

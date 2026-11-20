@@ -1,0 +1,6 @@
+{
+  "expected": 8488,
+  "successful_predictions": 8488,
+  "status": "complete",
+  "conditional_CI_note": "Conditional on pooled fitted OOF predictions; excludes full model training/selection uncertainty and overlapping-fold dependence."
+}

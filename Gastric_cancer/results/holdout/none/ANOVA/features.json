@@ -1,0 +1,12 @@
+{
+  "k": 4,
+  "features": [
+    "MOTIF_END_CAAA",
+    "MOTIF_END_CAGT",
+    "MOTIF_END_TGCC",
+    "MOTIF_END_CAAG"
+  ],
+  "ranking_fit_n": 1054,
+  "validation_xgb_auc": 0.8786542338709677,
+  "cap": 29
+}

@@ -1,0 +1,180 @@
+[
+  {
+    "folder": "Liver_cancer",
+    "names": [
+      "AUC_vs_FeatureCount_ReliefF_BarOnlyVal"
+    ],
+    "method": "ReliefF",
+    "script": "code/private_replay/plot_s4.py",
+    "original_notebook": "<STUDY_SOURCE>/Liver_cancer/Liver_feature_screening.ipynb",
+    "k": 19,
+    "canvas_inches": [
+      9.0,
+      7.0
+    ],
+    "font": "Arial",
+    "font_sizes_pt": [
+      10.0,
+      15.0,
+      19.0,
+      24.0
+    ],
+    "outputs": [
+      "figures/AUC_vs_FeatureCount_ReliefF_BarOnlyVal.pdf"
+    ],
+    "notes": "原跨策略LOCKED_SELECTION的overall为class_weight，不能用其selected_policy_predictions或final_validation_locked预测替代none。本目录正式模型取per_strategy.none：ReliefF/K19/WeightedEnsemble_L2，Test AUC=0.9523043944。none predictor的sample_weight_column=null，实际refit传入权重为null；每位训练患者出现一次。极坐标原0.7–1半径会截去新结果中的低指标，现扩展为0–1，保留极坐标、模型/指标排列和配色。ReliefF搜索上限19且最优K=19，不能声称搜索了任意更大K后的全局最优。",
+    "prediction_source_policy": "only same-task none; apparent final training is not internal validation; no Test-based model selection",
+    "public_data": [
+      "figures/data/ReliefF/K_optimization.csv",
+      "figures/data/ReliefF/selected_feature_scores.csv"
+    ],
+    "private_inputs_not_distributed": [],
+    "notebook_reference_scope": "Historical provenance only; runtime uses the semantic function above",
+    "function": "plot_feature_count_curve",
+    "kwargs": {},
+    "supplementary_figure": "S4",
+    "panel": null,
+    "requires_private_data": false,
+    "source_notebook": "Liver_cancer/Liver_feature_screening.ipynb",
+    "source_cell": 29,
+    "manuscript_output_status": "Retained original PDF; not overwritten by this refactor",
+    "replay_validation": "Executed on real public feature/K inputs; PNG pixels equal the pre-refactor source rendering"
+  },
+  {
+    "folder": "Liver_cancer",
+    "names": [
+      "Model_Metric_Polar_Plot_Test"
+    ],
+    "method": "ReliefF",
+    "script": "code/private_replay/plot_s4.py",
+    "original_notebook": "<STUDY_SOURCE>/Liver_cancer/Liver_cancer.ipynb",
+    "k": 19,
+    "canvas_inches": [
+      8.0,
+      8.0
+    ],
+    "font": "Arial",
+    "font_sizes_pt": [
+      8.0,
+      14.0,
+      15.0,
+      19.0
+    ],
+    "outputs": [
+      "figures/Model_Metric_Polar_Plot_Test.pdf"
+    ],
+    "notes": "原跨策略LOCKED_SELECTION的overall为class_weight，不能用其selected_policy_predictions或final_validation_locked预测替代none。本目录正式模型取per_strategy.none：ReliefF/K19/WeightedEnsemble_L2，Test AUC=0.9523043944。none predictor的sample_weight_column=null，实际refit传入权重为null；每位训练患者出现一次。极坐标原0.7–1半径会截去新结果中的低指标，现扩展为0–1，保留极坐标、模型/指标排列和配色。ReliefF搜索上限19且最优K=19，不能声称搜索了任意更大K后的全局最优。",
+    "prediction_source_policy": "only same-task none; apparent final training is not internal validation; no Test-based model selection",
+    "public_data": [
+      "figures/data/ReliefF/K_optimization.csv",
+      "figures/data/ReliefF/model_metrics_Test_and_apparent_training.csv",
+      "figures/data/ReliefF/selected_feature_scores.csv"
+    ],
+    "private_inputs_not_distributed": [
+      "results/holdout/none/ReliefF/evaluation_predictions_*.csv",
+      "results/holdout/patient_split.csv",
+      "results/recovered_training_predictions/ReliefF/apparent_training_predictions_*.csv"
+    ],
+    "notebook_reference_scope": "Historical provenance only; runtime uses the semantic function above",
+    "function": "plot_model_metric_polar",
+    "kwargs": {
+      "dataset": "test"
+    },
+    "supplementary_figure": "S4",
+    "panel": null,
+    "requires_private_data": true,
+    "source_notebook": "Liver_cancer/Liver_cancer.ipynb",
+    "source_cell": 21,
+    "manuscript_output_status": "Retained original PDF; not overwritten by this refactor",
+    "replay_validation": "Not executed: authorized patient inputs are not distributed; body migration and input mapping checked"
+  },
+  {
+    "folder": "Liver_cancer",
+    "names": [
+      "Model_Metric_Polar_Plot_Train"
+    ],
+    "method": "ReliefF",
+    "script": "code/private_replay/plot_s4.py",
+    "original_notebook": "<STUDY_SOURCE>/Liver_cancer/Liver_cancer.ipynb",
+    "k": 19,
+    "canvas_inches": [
+      8.0,
+      8.0
+    ],
+    "font": "Arial",
+    "font_sizes_pt": [
+      8.0,
+      14.0,
+      15.0,
+      19.0
+    ],
+    "outputs": [
+      "figures/Model_Metric_Polar_Plot_Train.pdf"
+    ],
+    "notes": "原跨策略LOCKED_SELECTION的overall为class_weight，不能用其selected_policy_predictions或final_validation_locked预测替代none。本目录正式模型取per_strategy.none：ReliefF/K19/WeightedEnsemble_L2，Test AUC=0.9523043944。none predictor的sample_weight_column=null，实际refit传入权重为null；每位训练患者出现一次。极坐标原0.7–1半径会截去新结果中的低指标，现扩展为0–1，保留极坐标、模型/指标排列和配色。ReliefF搜索上限19且最优K=19，不能声称搜索了任意更大K后的全局最优。",
+    "prediction_source_policy": "only same-task none; apparent final training is not internal validation; no Test-based model selection",
+    "public_data": [
+      "figures/data/ReliefF/K_optimization.csv",
+      "figures/data/ReliefF/model_metrics_Test_and_apparent_training.csv",
+      "figures/data/ReliefF/selected_feature_scores.csv"
+    ],
+    "private_inputs_not_distributed": [
+      "results/holdout/none/ReliefF/evaluation_predictions_*.csv",
+      "results/holdout/patient_split.csv",
+      "results/recovered_training_predictions/ReliefF/apparent_training_predictions_*.csv"
+    ],
+    "notebook_reference_scope": "Historical provenance only; runtime uses the semantic function above",
+    "function": "plot_model_metric_polar",
+    "kwargs": {
+      "dataset": "train"
+    },
+    "supplementary_figure": "S4",
+    "panel": null,
+    "requires_private_data": true,
+    "source_notebook": "Liver_cancer/Liver_cancer.ipynb",
+    "source_cell": 20,
+    "manuscript_output_status": "Retained original PDF; not overwritten by this refactor",
+    "replay_validation": "Not executed: authorized patient inputs are not distributed; body migration and input mapping checked"
+  },
+  {
+    "folder": "Liver_cancer",
+    "names": [
+      "Top_Feature_Barplot_Liver"
+    ],
+    "method": "ReliefF",
+    "script": "code/private_replay/plot_s4.py",
+    "original_notebook": "<STUDY_SOURCE>/Liver_cancer/Liver_cancer.ipynb",
+    "k": 19,
+    "canvas_inches": [
+      9.0,
+      7.0
+    ],
+    "font": "Arial",
+    "font_sizes_pt": [
+      10.0,
+      15.0,
+      19.0,
+      24.0
+    ],
+    "outputs": [
+      "figures/Top_Feature_Barplot_Liver.pdf"
+    ],
+    "notes": "原跨策略LOCKED_SELECTION的overall为class_weight，不能用其selected_policy_predictions或final_validation_locked预测替代none。本目录正式模型取per_strategy.none：ReliefF/K19/WeightedEnsemble_L2，Test AUC=0.9523043944。none predictor的sample_weight_column=null，实际refit传入权重为null；每位训练患者出现一次。极坐标原0.7–1半径会截去新结果中的低指标，现扩展为0–1，保留极坐标、模型/指标排列和配色。ReliefF搜索上限19且最优K=19，不能声称搜索了任意更大K后的全局最优。",
+    "prediction_source_policy": "only same-task none; apparent final training is not internal validation; no Test-based model selection",
+    "public_data": [
+      "figures/data/ReliefF/K_optimization.csv",
+      "figures/data/ReliefF/selected_feature_scores.csv"
+    ],
+    "private_inputs_not_distributed": [],
+    "notebook_reference_scope": "Historical provenance only; runtime uses the semantic function above",
+    "function": "plot_top_feature_scores",
+    "kwargs": {},
+    "supplementary_figure": "S4",
+    "panel": null,
+    "requires_private_data": false,
+    "source_notebook": "Liver_cancer/Liver_cancer.ipynb",
+    "source_cell": 32,
+    "manuscript_output_status": "Retained original PDF; not overwritten by this refactor",
+    "replay_validation": "Executed on real public feature/K inputs; PNG pixels equal the pre-refactor source rendering"
+  }
+]

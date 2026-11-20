@@ -1,0 +1,13 @@
+{
+  "task": "breast",
+  "context": "holdout",
+  "inner_train_validation_overlap": 0,
+  "inner_train_eval_overlap": 0,
+  "validation_eval_overlap": 0,
+  "train_eval_overlap": 0,
+  "n_original_train": 1418,
+  "n_original_evaluation": 355,
+  "n_inner_train": 1134,
+  "n_inner_validation": 284,
+  "matches_previous_split": true
+}

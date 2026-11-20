@@ -1,0 +1,18 @@
+{
+  "k": 10,
+  "features": [
+    "GWMD_chr8_112",
+    "GWMD_chr8_116",
+    "GWMD_chr1_192",
+    "GWMD_chr13_107",
+    "GWMD_chr8_89",
+    "GWMD_chr5_165",
+    "GWMD_chr5_166",
+    "GWMD_chr8_139",
+    "GWMD_chr10_133",
+    "GWMD_chr2_3"
+  ],
+  "ranking_fit_n": 1464,
+  "validation_xgb_auc": 0.6950380107145734,
+  "cap": 100
+}

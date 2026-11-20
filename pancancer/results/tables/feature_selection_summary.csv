@@ -1,0 +1,2 @@
+task,task_cn,method,model,k,ranking_fit_n,inner_validation_n,final_training_n,test_n,validation_AUC,validation_AUPRC,validation_Recall,validation_Specificity
+pan6,六分类,ReliefF,NeuralNetFastAI,20,1464,366,1830,458,0.9221034598574924,0.808428316592766,0.5133632447851463,0.967741935483871

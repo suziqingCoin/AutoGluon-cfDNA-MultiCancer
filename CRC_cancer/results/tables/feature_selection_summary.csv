@@ -1,0 +1,2 @@
+task,task_cn,method,model,k,ranking_fit_n,inner_validation_n,final_training_n,test_n,validation_AUC,validation_AUPRC,validation_Recall,validation_Specificity
+crc,结直肠癌,ReliefF,NeuralNetFastAI,121,1093,274,1367,342,0.9673895582329316,0.8800702763875534,0.8,0.9919678714859438

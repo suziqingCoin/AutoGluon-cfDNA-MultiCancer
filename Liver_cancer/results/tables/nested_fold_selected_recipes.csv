@@ -1,0 +1,4 @@
+task,fold,method,k,model,inner_validation_AUC
+liver,0,ANOVA,37,WeightedEnsemble_L2,0.9680259499536608
+liver,1,ReliefF,18,NeuralNetFastAI,0.9610750695088044
+liver,2,ReliefF,7,WeightedEnsemble_L2,0.990268767377201

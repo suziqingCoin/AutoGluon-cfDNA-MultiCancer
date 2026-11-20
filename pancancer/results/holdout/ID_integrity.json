@@ -1,0 +1,13 @@
+{
+  "task": "pan6",
+  "context": "holdout",
+  "inner_train_validation_overlap": 0,
+  "inner_train_eval_overlap": 0,
+  "validation_eval_overlap": 0,
+  "train_eval_overlap": 0,
+  "n_original_train": 1830,
+  "n_original_evaluation": 458,
+  "n_inner_train": 1464,
+  "n_inner_validation": 366,
+  "matches_previous_split": true
+}

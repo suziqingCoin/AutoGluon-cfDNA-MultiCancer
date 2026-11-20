@@ -1,0 +1,118 @@
+{
+  "status": "PASS",
+  "patient_data_published": false,
+  "fixed_test": [
+    {
+      "task": "lung",
+      "validation_locked_recipe": true,
+      "unique_test_patients": true,
+      "all_20_candidate_test_AUCs_recomputed": true,
+      "all_overall_bootstrap_CIs_recomputed": true,
+      "exact_specificity_CI_recomputed": true
+    },
+    {
+      "task": "breast",
+      "validation_locked_recipe": true,
+      "unique_test_patients": true,
+      "all_20_candidate_test_AUCs_recomputed": true,
+      "all_overall_bootstrap_CIs_recomputed": true,
+      "exact_specificity_CI_recomputed": true
+    },
+    {
+      "task": "crc",
+      "validation_locked_recipe": true,
+      "unique_test_patients": true,
+      "all_20_candidate_test_AUCs_recomputed": true,
+      "all_overall_bootstrap_CIs_recomputed": true,
+      "exact_specificity_CI_recomputed": true
+    },
+    {
+      "task": "liver",
+      "validation_locked_recipe": true,
+      "unique_test_patients": true,
+      "all_20_candidate_test_AUCs_recomputed": true,
+      "all_overall_bootstrap_CIs_recomputed": true,
+      "exact_specificity_CI_recomputed": true
+    },
+    {
+      "task": "gastric",
+      "validation_locked_recipe": true,
+      "unique_test_patients": true,
+      "all_20_candidate_test_AUCs_recomputed": true,
+      "all_overall_bootstrap_CIs_recomputed": true,
+      "exact_specificity_CI_recomputed": true
+    },
+    {
+      "task": "pan6",
+      "validation_locked_recipe": true,
+      "unique_test_patients": true,
+      "all_20_candidate_test_AUCs_recomputed": true,
+      "all_overall_bootstrap_CIs_recomputed": true,
+      "exact_specificity_CI_recomputed": true
+    }
+  ],
+  "nested": [
+    {
+      "task": "lung",
+      "successful_outer_folds": 1686,
+      "each_prediction_matches_original_success_checksum": true,
+      "all_20_candidate_locks_present": true,
+      "outer_fit_n_verified": true,
+      "method_model_K_distributions_verified": true,
+      "pooled_points_and_2000_bootstrap_AUC_AP_CIs_recomputed": true,
+      "all_stage_workpoint_points_recomputed": true,
+      "ordered_SUCCESS_sha256_root": "7067b0b40737308b307abf838ea7aa0726dbf272226c650509706072fc60be4c",
+      "scope": "SUCCESS, prediction, lock and aggregate checks; full ranking/model artifacts are not rehashed in this release audit"
+    },
+    {
+      "task": "breast",
+      "successful_outer_folds": 1773,
+      "each_prediction_matches_original_success_checksum": true,
+      "all_20_candidate_locks_present": true,
+      "outer_fit_n_verified": true,
+      "method_model_K_distributions_verified": true,
+      "pooled_points_and_2000_bootstrap_AUC_AP_CIs_recomputed": true,
+      "all_stage_workpoint_points_recomputed": true,
+      "ordered_SUCCESS_sha256_root": "0305d58f7e296d369eb421acdf2bd4f3ee905c31dd241cddd207786f9b349813",
+      "scope": "SUCCESS, prediction, lock and aggregate checks; full ranking/model artifacts are not rehashed in this release audit"
+    },
+    {
+      "task": "crc",
+      "successful_outer_folds": 1709,
+      "each_prediction_matches_original_success_checksum": true,
+      "all_20_candidate_locks_present": true,
+      "outer_fit_n_verified": true,
+      "method_model_K_distributions_verified": true,
+      "pooled_points_and_2000_bootstrap_AUC_AP_CIs_recomputed": true,
+      "all_stage_workpoint_points_recomputed": true,
+      "ordered_SUCCESS_sha256_root": "39f70ebaa552f1ae274781eb4e82fa35097db2e6645ef72374dd2c1c5b4df77d",
+      "scope": "SUCCESS, prediction, lock and aggregate checks; full ranking/model artifacts are not rehashed in this release audit"
+    },
+    {
+      "task": "liver",
+      "successful_outer_folds": 1672,
+      "each_prediction_matches_original_success_checksum": true,
+      "all_20_candidate_locks_present": true,
+      "outer_fit_n_verified": true,
+      "method_model_K_distributions_verified": true,
+      "pooled_points_and_2000_bootstrap_AUC_AP_CIs_recomputed": true,
+      "all_stage_workpoint_points_recomputed": true,
+      "ordered_SUCCESS_sha256_root": "ca79a0809c18f1e94612bdfdcda8b0a1d34c44e8743589b5b8865c5f9d4e55d9",
+      "scope": "SUCCESS, prediction, lock and aggregate checks; full ranking/model artifacts are not rehashed in this release audit"
+    },
+    {
+      "task": "gastric",
+      "successful_outer_folds": 1648,
+      "each_prediction_matches_original_success_checksum": true,
+      "all_20_candidate_locks_present": true,
+      "outer_fit_n_verified": true,
+      "method_model_K_distributions_verified": true,
+      "pooled_points_and_2000_bootstrap_AUC_AP_CIs_recomputed": true,
+      "all_stage_workpoint_points_recomputed": true,
+      "ordered_SUCCESS_sha256_root": "390384c5f43c51fe879304752a05950294b856ba51d366ab12c0d74ea205506e",
+      "scope": "SUCCESS, prediction, lock and aggregate checks; full ranking/model artifacts are not rehashed in this release audit"
+    }
+  ],
+  "total_successful_outer_folds": 8488,
+  "all_8488_original_source_and_raw_signatures_match": true
+}

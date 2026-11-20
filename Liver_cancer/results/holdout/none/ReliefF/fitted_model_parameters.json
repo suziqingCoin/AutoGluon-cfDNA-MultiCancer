@@ -1,0 +1,953 @@
+{
+  "path": "<REVISION_SOURCE>/Sampling_Strategy_Comparison/results/liver/holdout/none/ReliefF/autogluon",
+  "label": "__target__",
+  "random_state": 0,
+  "version": "1.1.1",
+  "features": [
+    "MOTIF_END_TGCC",
+    "MOTIF_END_TGCT",
+    "MOTIF_END_TGCA",
+    "TMD_124",
+    "flen_185",
+    "flen_184",
+    "flen_178",
+    "flen_186",
+    "flen_177",
+    "flen_179",
+    "MOTIF_END_TGTT",
+    "flen_183",
+    "flen_180",
+    "flen_187",
+    "MOTIF_END_TGAT",
+    "flen_182",
+    "flen_181",
+    "flen_152",
+    "flen_151"
+  ],
+  "feature_metadata_in": "('float', []) : 19 | ['MOTIF_END_TGCC', 'MOTIF_END_TGCT', 'MOTIF_END_TGCA', 'TMD_124', 'flen_185', ...]",
+  "time_fit_preprocessing": 0.026932716369628906,
+  "time_fit_training": 3.632814407348633,
+  "time_fit_total": 3.6597471237182617,
+  "time_limit": null,
+  "time_train_start": 1794385015.3108368,
+  "num_rows_train": 1069,
+  "num_cols_train": 19,
+  "num_rows_val": 268,
+  "num_classes": 2,
+  "problem_type": "binary",
+  "eval_metric": "roc_auc",
+  "best_model": "WeightedEnsemble_L2",
+  "best_model_score_val": 0.9300403225806453,
+  "best_model_stack_level": 2,
+  "num_models_trained": 10,
+  "num_bag_folds": 0,
+  "max_stack_level": 2,
+  "max_core_stack_level": 1,
+  "model_info": {
+    "LightGBM": {
+      "name": "LightGBM",
+      "model_type": "LGBModel",
+      "problem_type": "binary",
+      "eval_metric": "roc_auc",
+      "stopping_metric": "log_loss",
+      "fit_time": 0.4415273666381836,
+      "num_classes": 2,
+      "quantile_levels": null,
+      "predict_time": 0.0011680126190185547,
+      "val_score": 0.8804435483870967,
+      "hyperparameters": {
+        "learning_rate": 0.05
+      },
+      "hyperparameters_fit": {
+        "num_boost_round": 31
+      },
+      "hyperparameters_nondefault": [],
+      "ag_args_fit": {
+        "max_memory_usage_ratio": 1.0,
+        "max_time_limit_ratio": 1.0,
+        "max_time_limit": null,
+        "min_time_limit": 0,
+        "valid_raw_types": [
+          "bool",
+          "int",
+          "float",
+          "category"
+        ],
+        "valid_special_types": null,
+        "ignored_type_group_special": null,
+        "ignored_type_group_raw": null,
+        "get_features_kwargs": null,
+        "get_features_kwargs_extra": null,
+        "predict_1_batch_size": null,
+        "temperature_scalar": null,
+        "num_cpus": 2,
+        "num_gpus": 0
+      },
+      "num_features": 19,
+      "features": [
+        "MOTIF_END_TGCC",
+        "MOTIF_END_TGCT",
+        "MOTIF_END_TGCA",
+        "TMD_124",
+        "flen_185",
+        "flen_184",
+        "flen_178",
+        "flen_186",
+        "flen_177",
+        "flen_179",
+        "MOTIF_END_TGTT",
+        "flen_183",
+        "flen_180",
+        "flen_187",
+        "MOTIF_END_TGAT",
+        "flen_182",
+        "flen_181",
+        "flen_152",
+        "flen_151"
+      ],
+      "feature_metadata": "('float', []) : 19 | ['MOTIF_END_TGCC', 'MOTIF_END_TGCT', 'MOTIF_END_TGCA', 'TMD_124', 'flen_185', ...]",
+      "memory_size": 111725,
+      "compile_time": null,
+      "is_initialized": true,
+      "is_fit": true,
+      "is_valid": true,
+      "can_infer": true
+    },
+    "RandomForest": {
+      "name": "RandomForest",
+      "model_type": "RFModel",
+      "problem_type": "binary",
+      "eval_metric": "roc_auc",
+      "stopping_metric": "log_loss",
+      "fit_time": 1.186814308166504,
+      "num_classes": 2,
+      "quantile_levels": null,
+      "predict_time": 0.11885929107666016,
+      "val_score": 0.9054435483870968,
+      "hyperparameters": {
+        "n_estimators": 300,
+        "max_leaf_nodes": 15000,
+        "n_jobs": -1,
+        "random_state": 0,
+        "bootstrap": true,
+        "criterion": "gini"
+      },
+      "hyperparameters_fit": {
+        "n_estimators": 300
+      },
+      "hyperparameters_nondefault": [
+        "criterion"
+      ],
+      "ag_args_fit": {
+        "max_memory_usage_ratio": 1.0,
+        "max_time_limit_ratio": 1.0,
+        "max_time_limit": null,
+        "min_time_limit": 0,
+        "valid_raw_types": [
+          "bool",
+          "int",
+          "float",
+          "category"
+        ],
+        "valid_special_types": null,
+        "ignored_type_group_special": null,
+        "ignored_type_group_raw": null,
+        "get_features_kwargs": null,
+        "get_features_kwargs_extra": null,
+        "predict_1_batch_size": null,
+        "temperature_scalar": null,
+        "num_cpus": 2,
+        "num_gpus": 0
+      },
+      "num_features": 19,
+      "features": [
+        "MOTIF_END_TGCC",
+        "MOTIF_END_TGCT",
+        "MOTIF_END_TGCA",
+        "TMD_124",
+        "flen_185",
+        "flen_184",
+        "flen_178",
+        "flen_186",
+        "flen_177",
+        "flen_179",
+        "MOTIF_END_TGTT",
+        "flen_183",
+        "flen_180",
+        "flen_187",
+        "MOTIF_END_TGAT",
+        "flen_182",
+        "flen_181",
+        "flen_152",
+        "flen_151"
+      ],
+      "feature_metadata": "('float', []) : 19 | ['MOTIF_END_TGCC', 'MOTIF_END_TGCT', 'MOTIF_END_TGCA', 'TMD_124', 'flen_185', ...]",
+      "memory_size": 2092153,
+      "compile_time": null,
+      "is_initialized": true,
+      "is_fit": true,
+      "is_valid": true,
+      "can_infer": true
+    },
+    "NeuralNetFastAI": {
+      "name": "NeuralNetFastAI",
+      "model_type": "NNFastAiTabularModel",
+      "problem_type": "binary",
+      "eval_metric": "roc_auc",
+      "stopping_metric": "log_loss",
+      "fit_time": 1.2383134365081787,
+      "num_classes": 2,
+      "quantile_levels": null,
+      "predict_time": 0.009051799774169922,
+      "val_score": 0.8983870967741935,
+      "hyperparameters": {
+        "layers": null,
+        "emb_drop": 0.1,
+        "ps": 0.1,
+        "bs": "auto",
+        "lr": 0.01,
+        "epochs": "auto",
+        "early.stopping.min_delta": 0.0001,
+        "early.stopping.patience": 20,
+        "smoothing": 0.0
+      },
+      "hyperparameters_fit": {
+        "epochs": 30,
+        "best_epoch": 22
+      },
+      "hyperparameters_nondefault": [],
+      "ag_args_fit": {
+        "max_memory_usage_ratio": 1.0,
+        "max_time_limit_ratio": 1.0,
+        "max_time_limit": null,
+        "min_time_limit": 0,
+        "valid_raw_types": [
+          "bool",
+          "int",
+          "float",
+          "category"
+        ],
+        "valid_special_types": null,
+        "ignored_type_group_special": [
+          "text_ngram",
+          "text_as_category"
+        ],
+        "ignored_type_group_raw": null,
+        "get_features_kwargs": null,
+        "get_features_kwargs_extra": null,
+        "predict_1_batch_size": null,
+        "temperature_scalar": null,
+        "num_cpus": 2,
+        "num_gpus": 0
+      },
+      "num_features": 19,
+      "features": [
+        "MOTIF_END_TGCC",
+        "MOTIF_END_TGCT",
+        "MOTIF_END_TGCA",
+        "TMD_124",
+        "flen_185",
+        "flen_184",
+        "flen_178",
+        "flen_186",
+        "flen_177",
+        "flen_179",
+        "MOTIF_END_TGTT",
+        "flen_183",
+        "flen_180",
+        "flen_187",
+        "MOTIF_END_TGAT",
+        "flen_182",
+        "flen_181",
+        "flen_152",
+        "flen_151"
+      ],
+      "feature_metadata": "('float', []) : 19 | ['MOTIF_END_TGCC', 'MOTIF_END_TGCT', 'MOTIF_END_TGCA', 'TMD_124', 'flen_185', ...]",
+      "memory_size": 141942,
+      "compile_time": null,
+      "is_initialized": true,
+      "is_fit": true,
+      "is_valid": true,
+      "can_infer": true
+    },
+    "XGBoost": {
+      "name": "XGBoost",
+      "model_type": "XGBoostModel",
+      "problem_type": "binary",
+      "eval_metric": "roc_auc",
+      "stopping_metric": "log_loss",
+      "fit_time": 0.40062999725341797,
+      "num_classes": 2,
+      "quantile_levels": null,
+      "predict_time": 0.004353046417236328,
+      "val_score": 0.9027217741935484,
+      "hyperparameters": {
+        "n_estimators": 10000,
+        "learning_rate": 0.1,
+        "n_jobs": -1,
+        "proc.max_category_levels": 100,
+        "objective": "binary:logistic",
+        "booster": "gbtree"
+      },
+      "hyperparameters_fit": {
+        "n_estimators": 30
+      },
+      "hyperparameters_nondefault": [],
+      "ag_args_fit": {
+        "max_memory_usage_ratio": 1.0,
+        "max_time_limit_ratio": 1.0,
+        "max_time_limit": null,
+        "min_time_limit": 0,
+        "valid_raw_types": [
+          "bool",
+          "int",
+          "float",
+          "category"
+        ],
+        "valid_special_types": null,
+        "ignored_type_group_special": null,
+        "ignored_type_group_raw": null,
+        "get_features_kwargs": null,
+        "get_features_kwargs_extra": null,
+        "predict_1_batch_size": null,
+        "temperature_scalar": null,
+        "num_cpus": 2,
+        "num_gpus": 0
+      },
+      "num_features": 19,
+      "features": [
+        "MOTIF_END_TGCC",
+        "MOTIF_END_TGCT",
+        "MOTIF_END_TGCA",
+        "TMD_124",
+        "flen_185",
+        "flen_184",
+        "flen_178",
+        "flen_186",
+        "flen_177",
+        "flen_179",
+        "MOTIF_END_TGTT",
+        "flen_183",
+        "flen_180",
+        "flen_187",
+        "MOTIF_END_TGAT",
+        "flen_182",
+        "flen_181",
+        "flen_152",
+        "flen_151"
+      ],
+      "feature_metadata": "('float', []) : 19 | ['MOTIF_END_TGCC', 'MOTIF_END_TGCT', 'MOTIF_END_TGCA', 'TMD_124', 'flen_185', ...]",
+      "memory_size": 396047,
+      "compile_time": null,
+      "is_initialized": true,
+      "is_fit": true,
+      "is_valid": true,
+      "can_infer": true
+    },
+    "WeightedEnsemble_L2": {
+      "name": "WeightedEnsemble_L2",
+      "model_type": "WeightedEnsembleModel",
+      "problem_type": "binary",
+      "eval_metric": "roc_auc",
+      "stopping_metric": "roc_auc",
+      "fit_time": 0.03567695617675781,
+      "num_classes": 2,
+      "quantile_levels": null,
+      "predict_time": 0.0005500316619873047,
+      "val_score": 0.9300403225806453,
+      "hyperparameters": {
+        "use_orig_features": false,
+        "max_base_models": 25,
+        "max_base_models_per_type": 5,
+        "save_bag_folds": true
+      },
+      "hyperparameters_fit": {},
+      "hyperparameters_nondefault": [
+        "save_bag_folds"
+      ],
+      "ag_args_fit": {
+        "max_memory_usage_ratio": 1.0,
+        "max_time_limit_ratio": 1.0,
+        "max_time_limit": null,
+        "min_time_limit": 0,
+        "valid_raw_types": null,
+        "valid_special_types": null,
+        "ignored_type_group_special": null,
+        "ignored_type_group_raw": null,
+        "get_features_kwargs": null,
+        "get_features_kwargs_extra": null,
+        "predict_1_batch_size": null,
+        "temperature_scalar": null,
+        "drop_unique": false
+      },
+      "num_features": 2,
+      "features": [
+        "NeuralNetFastAI",
+        "RandomForest"
+      ],
+      "feature_metadata": "('float', ['stack']) : 4 | ['LightGBM', 'RandomForest', 'NeuralNetFastAI', 'XGBoost']",
+      "memory_size": 3277,
+      "compile_time": null,
+      "is_initialized": true,
+      "is_fit": true,
+      "is_valid": true,
+      "can_infer": true,
+      "bagged_info": {
+        "child_model_type": "GreedyWeightedEnsembleModel",
+        "num_child_models": 1,
+        "child_model_names": [
+          "S1F1"
+        ],
+        "_n_repeats": 1,
+        "_k_per_n_repeat": [
+          1
+        ],
+        "_random_state": 2,
+        "low_memory": false,
+        "bagged_mode": false,
+        "max_memory_size": 3277,
+        "min_memory_size": 3277,
+        "child_hyperparameters": {
+          "ensemble_size": 25,
+          "subsample_size": 1000000
+        },
+        "child_hyperparameters_fit": {
+          "ensemble_size": 18
+        },
+        "child_ag_args_fit": {
+          "max_memory_usage_ratio": 1.0,
+          "max_time_limit_ratio": 1.0,
+          "max_time_limit": null,
+          "min_time_limit": 0,
+          "valid_raw_types": null,
+          "valid_special_types": null,
+          "ignored_type_group_special": null,
+          "ignored_type_group_raw": null,
+          "get_features_kwargs": null,
+          "get_features_kwargs_extra": null,
+          "predict_1_batch_size": null,
+          "temperature_scalar": null,
+          "drop_unique": false
+        }
+      },
+      "stacker_info": {
+        "num_base_models": 2,
+        "base_model_names": [
+          "RandomForest",
+          "NeuralNetFastAI"
+        ]
+      },
+      "children_info": {
+        "S1F1": {
+          "name": "S1F1",
+          "model_type": "GreedyWeightedEnsembleModel",
+          "problem_type": "binary",
+          "eval_metric": "roc_auc",
+          "stopping_metric": "roc_auc",
+          "fit_time": 0.03567695617675781,
+          "num_classes": 2,
+          "quantile_levels": null,
+          "predict_time": null,
+          "val_score": null,
+          "hyperparameters": {
+            "ensemble_size": 25,
+            "subsample_size": 1000000
+          },
+          "hyperparameters_fit": {
+            "ensemble_size": 18
+          },
+          "hyperparameters_nondefault": [],
+          "ag_args_fit": {
+            "max_memory_usage_ratio": 1.0,
+            "max_time_limit_ratio": 1.0,
+            "max_time_limit": null,
+            "min_time_limit": 0,
+            "valid_raw_types": null,
+            "valid_special_types": null,
+            "ignored_type_group_special": null,
+            "ignored_type_group_raw": null,
+            "get_features_kwargs": null,
+            "get_features_kwargs_extra": null,
+            "predict_1_batch_size": null,
+            "temperature_scalar": null,
+            "drop_unique": false
+          },
+          "num_features": 2,
+          "features": [
+            "RandomForest",
+            "NeuralNetFastAI"
+          ],
+          "feature_metadata": "('float', ['stack']) : 4 | ['LightGBM', 'RandomForest', 'NeuralNetFastAI', 'XGBoost']",
+          "memory_size": 5923,
+          "compile_time": null,
+          "is_initialized": true,
+          "is_fit": true,
+          "is_valid": true,
+          "can_infer": true,
+          "model_weights": {
+            "RandomForest": 0.05555555555555555,
+            "NeuralNetFastAI": 0.9444444444444444
+          }
+        }
+      }
+    },
+    "LightGBM_FULL": {
+      "name": "LightGBM_FULL",
+      "model_type": "LGBModel",
+      "problem_type": "binary",
+      "eval_metric": "roc_auc",
+      "stopping_metric": "log_loss",
+      "fit_time": 0.21271109580993652,
+      "num_classes": 2,
+      "quantile_levels": null,
+      "predict_time": null,
+      "val_score": null,
+      "hyperparameters": {
+        "learning_rate": 0.05,
+        "num_boost_round": 31
+      },
+      "hyperparameters_fit": {
+        "num_boost_round": 31
+      },
+      "hyperparameters_nondefault": [
+        "num_boost_round"
+      ],
+      "ag_args_fit": {
+        "max_memory_usage_ratio": 1.15,
+        "max_time_limit_ratio": 1.0,
+        "max_time_limit": null,
+        "min_time_limit": 0,
+        "valid_raw_types": [
+          "bool",
+          "int",
+          "float",
+          "category"
+        ],
+        "valid_special_types": null,
+        "ignored_type_group_special": null,
+        "ignored_type_group_raw": null,
+        "get_features_kwargs": null,
+        "get_features_kwargs_extra": null,
+        "predict_1_batch_size": null,
+        "temperature_scalar": null,
+        "num_cpus": 2,
+        "num_gpus": 0
+      },
+      "num_features": 19,
+      "features": [
+        "MOTIF_END_TGCC",
+        "MOTIF_END_TGCT",
+        "MOTIF_END_TGCA",
+        "TMD_124",
+        "flen_185",
+        "flen_184",
+        "flen_178",
+        "flen_186",
+        "flen_177",
+        "flen_179",
+        "MOTIF_END_TGTT",
+        "flen_183",
+        "flen_180",
+        "flen_187",
+        "MOTIF_END_TGAT",
+        "flen_182",
+        "flen_181",
+        "flen_152",
+        "flen_151"
+      ],
+      "feature_metadata": "('float', []) : 19 | ['MOTIF_END_TGCC', 'MOTIF_END_TGCT', 'MOTIF_END_TGCA', 'TMD_124', 'flen_185', ...]",
+      "memory_size": 110267,
+      "compile_time": null,
+      "is_initialized": true,
+      "is_fit": true,
+      "is_valid": true,
+      "can_infer": true
+    },
+    "NeuralNetFastAI_FULL": {
+      "name": "NeuralNetFastAI_FULL",
+      "model_type": "NNFastAiTabularModel",
+      "problem_type": "binary",
+      "eval_metric": "roc_auc",
+      "stopping_metric": "log_loss",
+      "fit_time": 1.0386958122253418,
+      "num_classes": 2,
+      "quantile_levels": null,
+      "predict_time": null,
+      "val_score": null,
+      "hyperparameters": {
+        "layers": null,
+        "emb_drop": 0.1,
+        "ps": 0.1,
+        "bs": "auto",
+        "lr": 0.01,
+        "epochs": 30,
+        "early.stopping.min_delta": 0.0001,
+        "early.stopping.patience": 20,
+        "smoothing": 0.0,
+        "best_epoch": 22
+      },
+      "hyperparameters_fit": {
+        "epochs": 30,
+        "best_epoch": 22
+      },
+      "hyperparameters_nondefault": [
+        "epochs",
+        "best_epoch"
+      ],
+      "ag_args_fit": {
+        "max_memory_usage_ratio": 1.15,
+        "max_time_limit_ratio": 1.0,
+        "max_time_limit": null,
+        "min_time_limit": 0,
+        "valid_raw_types": [
+          "bool",
+          "int",
+          "float",
+          "category"
+        ],
+        "valid_special_types": null,
+        "ignored_type_group_special": [
+          "text_ngram",
+          "text_as_category"
+        ],
+        "ignored_type_group_raw": null,
+        "get_features_kwargs": null,
+        "get_features_kwargs_extra": null,
+        "predict_1_batch_size": null,
+        "temperature_scalar": null,
+        "num_cpus": 2,
+        "num_gpus": 0
+      },
+      "num_features": 19,
+      "features": [
+        "MOTIF_END_TGCC",
+        "MOTIF_END_TGCT",
+        "MOTIF_END_TGCA",
+        "TMD_124",
+        "flen_185",
+        "flen_184",
+        "flen_178",
+        "flen_186",
+        "flen_177",
+        "flen_179",
+        "MOTIF_END_TGTT",
+        "flen_183",
+        "flen_180",
+        "flen_187",
+        "MOTIF_END_TGAT",
+        "flen_182",
+        "flen_181",
+        "flen_152",
+        "flen_151"
+      ],
+      "feature_metadata": "('float', []) : 19 | ['MOTIF_END_TGCC', 'MOTIF_END_TGCT', 'MOTIF_END_TGCA', 'TMD_124', 'flen_185', ...]",
+      "memory_size": 142442,
+      "compile_time": null,
+      "is_initialized": true,
+      "is_fit": true,
+      "is_valid": true,
+      "can_infer": true
+    },
+    "XGBoost_FULL": {
+      "name": "XGBoost_FULL",
+      "model_type": "XGBoostModel",
+      "problem_type": "binary",
+      "eval_metric": "roc_auc",
+      "stopping_metric": "log_loss",
+      "fit_time": 0.12508344650268555,
+      "num_classes": 2,
+      "quantile_levels": null,
+      "predict_time": null,
+      "val_score": null,
+      "hyperparameters": {
+        "n_estimators": 30,
+        "learning_rate": 0.1,
+        "n_jobs": -1,
+        "proc.max_category_levels": 100,
+        "objective": "binary:logistic",
+        "booster": "gbtree"
+      },
+      "hyperparameters_fit": {},
+      "hyperparameters_nondefault": [
+        "n_estimators"
+      ],
+      "ag_args_fit": {
+        "max_memory_usage_ratio": 1.15,
+        "max_time_limit_ratio": 1.0,
+        "max_time_limit": null,
+        "min_time_limit": 0,
+        "valid_raw_types": [
+          "bool",
+          "int",
+          "float",
+          "category"
+        ],
+        "valid_special_types": null,
+        "ignored_type_group_special": null,
+        "ignored_type_group_raw": null,
+        "get_features_kwargs": null,
+        "get_features_kwargs_extra": null,
+        "predict_1_batch_size": null,
+        "temperature_scalar": null,
+        "num_cpus": 2,
+        "num_gpus": 0
+      },
+      "num_features": 19,
+      "features": [
+        "MOTIF_END_TGCC",
+        "MOTIF_END_TGCT",
+        "MOTIF_END_TGCA",
+        "TMD_124",
+        "flen_185",
+        "flen_184",
+        "flen_178",
+        "flen_186",
+        "flen_177",
+        "flen_179",
+        "MOTIF_END_TGTT",
+        "flen_183",
+        "flen_180",
+        "flen_187",
+        "MOTIF_END_TGAT",
+        "flen_182",
+        "flen_181",
+        "flen_152",
+        "flen_151"
+      ],
+      "feature_metadata": "('float', []) : 19 | ['MOTIF_END_TGCC', 'MOTIF_END_TGCT', 'MOTIF_END_TGCA', 'TMD_124', 'flen_185', ...]",
+      "memory_size": 72619,
+      "compile_time": null,
+      "is_initialized": true,
+      "is_fit": true,
+      "is_valid": true,
+      "can_infer": true
+    },
+    "RandomForest_FULL": {
+      "name": "RandomForest_FULL",
+      "model_type": "RFModel",
+      "problem_type": "binary",
+      "eval_metric": "roc_auc",
+      "stopping_metric": "log_loss",
+      "fit_time": 1.0307807922363281,
+      "num_classes": 2,
+      "quantile_levels": null,
+      "predict_time": null,
+      "val_score": null,
+      "hyperparameters": {
+        "n_estimators": 300,
+        "max_leaf_nodes": 15000,
+        "n_jobs": -1,
+        "random_state": 0,
+        "bootstrap": true,
+        "criterion": "gini"
+      },
+      "hyperparameters_fit": {
+        "n_estimators": 300
+      },
+      "hyperparameters_nondefault": [
+        "criterion",
+        "n_estimators"
+      ],
+      "ag_args_fit": {
+        "max_memory_usage_ratio": 1.15,
+        "max_time_limit_ratio": 1.0,
+        "max_time_limit": null,
+        "min_time_limit": 0,
+        "valid_raw_types": [
+          "bool",
+          "int",
+          "float",
+          "category"
+        ],
+        "valid_special_types": null,
+        "ignored_type_group_special": null,
+        "ignored_type_group_raw": null,
+        "get_features_kwargs": null,
+        "get_features_kwargs_extra": null,
+        "predict_1_batch_size": null,
+        "temperature_scalar": null,
+        "num_cpus": 2,
+        "num_gpus": 0
+      },
+      "num_features": 19,
+      "features": [
+        "MOTIF_END_TGCC",
+        "MOTIF_END_TGCT",
+        "MOTIF_END_TGCA",
+        "TMD_124",
+        "flen_185",
+        "flen_184",
+        "flen_178",
+        "flen_186",
+        "flen_177",
+        "flen_179",
+        "MOTIF_END_TGTT",
+        "flen_183",
+        "flen_180",
+        "flen_187",
+        "MOTIF_END_TGAT",
+        "flen_182",
+        "flen_181",
+        "flen_152",
+        "flen_151"
+      ],
+      "feature_metadata": "('float', []) : 19 | ['MOTIF_END_TGCC', 'MOTIF_END_TGCT', 'MOTIF_END_TGCA', 'TMD_124', 'flen_185', ...]",
+      "memory_size": 2670653,
+      "compile_time": null,
+      "is_initialized": true,
+      "is_fit": true,
+      "is_valid": true,
+      "can_infer": true
+    },
+    "WeightedEnsemble_L2_FULL": {
+      "name": "WeightedEnsemble_L2_FULL",
+      "model_type": "WeightedEnsembleModel",
+      "problem_type": "binary",
+      "eval_metric": "roc_auc",
+      "stopping_metric": "roc_auc",
+      "fit_time": 0.03567695617675781,
+      "num_classes": 2,
+      "quantile_levels": null,
+      "predict_time": null,
+      "val_score": null,
+      "hyperparameters": {
+        "use_orig_features": false,
+        "max_base_models": 25,
+        "max_base_models_per_type": 5,
+        "save_bag_folds": true
+      },
+      "hyperparameters_fit": {},
+      "hyperparameters_nondefault": [
+        "save_bag_folds"
+      ],
+      "ag_args_fit": {
+        "max_memory_usage_ratio": 1.0,
+        "max_time_limit_ratio": 1.0,
+        "max_time_limit": null,
+        "min_time_limit": 0,
+        "valid_raw_types": null,
+        "valid_special_types": null,
+        "ignored_type_group_special": null,
+        "ignored_type_group_raw": null,
+        "get_features_kwargs": null,
+        "get_features_kwargs_extra": null,
+        "predict_1_batch_size": null,
+        "temperature_scalar": null,
+        "drop_unique": false
+      },
+      "num_features": 2,
+      "features": [
+        "NeuralNetFastAI",
+        "RandomForest"
+      ],
+      "feature_metadata": "('float', ['stack']) : 4 | ['LightGBM', 'RandomForest', 'NeuralNetFastAI', 'XGBoost']",
+      "memory_size": 3363,
+      "compile_time": null,
+      "is_initialized": true,
+      "is_fit": true,
+      "is_valid": true,
+      "can_infer": true,
+      "bagged_info": {
+        "child_model_type": "GreedyWeightedEnsembleModel",
+        "num_child_models": 1,
+        "child_model_names": [
+          "S1F1"
+        ],
+        "_n_repeats": 1,
+        "_k_per_n_repeat": [
+          1
+        ],
+        "_random_state": 2,
+        "low_memory": false,
+        "bagged_mode": false,
+        "max_memory_size": 3363,
+        "min_memory_size": 3363,
+        "child_hyperparameters": {
+          "ensemble_size": 25,
+          "subsample_size": 1000000
+        },
+        "child_hyperparameters_fit": {
+          "ensemble_size": 18
+        },
+        "child_ag_args_fit": {
+          "max_memory_usage_ratio": 1.0,
+          "max_time_limit_ratio": 1.0,
+          "max_time_limit": null,
+          "min_time_limit": 0,
+          "valid_raw_types": null,
+          "valid_special_types": null,
+          "ignored_type_group_special": null,
+          "ignored_type_group_raw": null,
+          "get_features_kwargs": null,
+          "get_features_kwargs_extra": null,
+          "predict_1_batch_size": null,
+          "temperature_scalar": null,
+          "drop_unique": false
+        }
+      },
+      "stacker_info": {
+        "num_base_models": 4,
+        "base_model_names": [
+          "RandomForest",
+          "NeuralNetFastAI",
+          "RandomForest_FULL",
+          "NeuralNetFastAI_FULL"
+        ]
+      },
+      "children_info": {
+        "S1F1": {
+          "name": "S1F1",
+          "model_type": "GreedyWeightedEnsembleModel",
+          "problem_type": "binary",
+          "eval_metric": "roc_auc",
+          "stopping_metric": "roc_auc",
+          "fit_time": 0.03567695617675781,
+          "num_classes": 2,
+          "quantile_levels": null,
+          "predict_time": null,
+          "val_score": null,
+          "hyperparameters": {
+            "ensemble_size": 25,
+            "subsample_size": 1000000
+          },
+          "hyperparameters_fit": {
+            "ensemble_size": 18
+          },
+          "hyperparameters_nondefault": [],
+          "ag_args_fit": {
+            "max_memory_usage_ratio": 1.0,
+            "max_time_limit_ratio": 1.0,
+            "max_time_limit": null,
+            "min_time_limit": 0,
+            "valid_raw_types": null,
+            "valid_special_types": null,
+            "ignored_type_group_special": null,
+            "ignored_type_group_raw": null,
+            "get_features_kwargs": null,
+            "get_features_kwargs_extra": null,
+            "predict_1_batch_size": null,
+            "temperature_scalar": null,
+            "drop_unique": false
+          },
+          "num_features": 2,
+          "features": [
+            "RandomForest",
+            "NeuralNetFastAI"
+          ],
+          "feature_metadata": "('float', ['stack']) : 4 | ['LightGBM', 'RandomForest', 'NeuralNetFastAI', 'XGBoost']",
+          "memory_size": 5923,
+          "compile_time": null,
+          "is_initialized": true,
+          "is_fit": true,
+          "is_valid": true,
+          "can_infer": true,
+          "model_weights": {
+            "RandomForest": 0.05555555555555555,
+            "NeuralNetFastAI": 0.9444444444444444
+          }
+        }
+      }
+    }
+  },
+  "model_info_failures": {}
+}

@@ -1,0 +1,7 @@
+{
+  "RandomForest": "RandomForest_FULL",
+  "LightGBM": "LightGBM_FULL",
+  "XGBoost": "XGBoost_FULL",
+  "NeuralNetFastAI": "NeuralNetFastAI_FULL",
+  "WeightedEnsemble_L2": "WeightedEnsemble_L2_FULL"
+}

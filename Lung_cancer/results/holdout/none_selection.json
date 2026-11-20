@@ -1,0 +1,15 @@
+{
+  "AUC": 0.9506964809384164,
+  "AUPRC": 0.7866669996998412,
+  "Recall": 0.5909090909090909,
+  "Specificity": 0.9919354838709676,
+  "Accuracy": 0.9592592592592591,
+  "Precision": 0.8666666666666667,
+  "F1": 0.7027027027027027,
+  "task": "lung",
+  "context": "holdout",
+  "strategy": "none",
+  "method": "ReliefF",
+  "model": "WeightedEnsemble_L2",
+  "k": 149
+}

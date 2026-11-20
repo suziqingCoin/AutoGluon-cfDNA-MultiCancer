@@ -1,0 +1,4 @@
+task,fold,method,k,model,inner_validation_AUC
+pan6,0,ReliefF,49,WeightedEnsemble_L2,0.9134669822641318
+pan6,1,ReliefF,15,WeightedEnsemble_L2,0.8493534025486572
+pan6,2,ReliefF,89,WeightedEnsemble_L2,0.9378596098831922

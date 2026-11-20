@@ -1,0 +1,2 @@
+task,n,n_controls,n_cancer,AUC,AUC_CI_low,AUC_CI_high,AUPRC,AUPRC_CI_low,AUPRC_CI_high,Accuracy,Precision,Recall,F1,Specificity,bootstrap_replicates,CI_note,status
+gastric,1648,1550,98,0.8959249506254114,0.8649965437788018,0.9238052995391706,0.5319755875021362,0.44295589016511566,0.6199717051602808,0.9514563106796117,0.6956521739130435,0.32653061224489793,0.4444444444444444,0.9909677419354839,2000,Conditional on pooled fitted OOF predictions; excludes full model training/selection uncertainty and overlapping-fold dependence.,complete

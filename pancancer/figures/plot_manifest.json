@@ -1,0 +1,565 @@
+[
+  {
+    "folder": "pancancer",
+    "names": [
+      "Fscore_six_class_ROC"
+    ],
+    "method": "Fscore",
+    "script": "code/private_replay/plot_s6.py",
+    "original_notebook": "<STUDY_SOURCE>/pancancer/pan_cancer.ipynb",
+    "k": 165,
+    "canvas_inches": [
+      10.0,
+      8.0
+    ],
+    "font": "Arial",
+    "font_sizes_pt": [
+      10.0,
+      12.0
+    ],
+    "outputs": [
+      "figures/Fscore_six_class_ROC.pdf"
+    ],
+    "notes": "仅六分类：标签0–5依次为Healthy(Control)、Breast、CRC、Gastric、Liver、Lung。主模型NeuralNetFastAI/ReliefF/K20；Fscore/ANOVA/Binomial补充ROC使用各方法内部验证选定的模型，只作候选展示。Figure2E/F采用全部458个唯一Test患者，六分类混淆矩阵包含Healthy。原癌症子矩阵的sklearn五标签归一化会排除预测Healthy者；新版先用六类矩阵按全部真实患者归一化，再截取癌症区域，确保误判Healthy仍进入分母。原图“Validation Accuracy”已明确为Test癌种准确率。原per_class_accuracy图保留其交叉二值指示变量accuracy含义，既非六类混淆矩阵，也不是各癌种对Healthy二分类。原ROC中按正负类别施加固定权重不改变曲线，已去除冗余评估权重以明确无权重。",
+    "prediction_source_policy": "only same-task none; apparent final training is not internal validation; no Test-based model selection",
+    "public_data": [
+      "figures/data/Fscore/K_optimization.csv",
+      "figures/data/Fscore/ROC_coordinates.csv",
+      "figures/data/Fscore/selected_feature_scores.csv",
+      "results/holdout/all_none_inner_validation_metrics.csv"
+    ],
+    "private_inputs_not_distributed": [
+      "results/holdout/none/Fscore/evaluation_predictions_*.csv",
+      "results/holdout/patient_split.csv",
+      "results/recovered_training_predictions/Fscore/apparent_training_predictions_*.csv"
+    ],
+    "notebook_reference_scope": "Historical provenance only; runtime uses the semantic function above",
+    "function": "plot_multiclass_roc",
+    "kwargs": {},
+    "supplementary_figure": "S6",
+    "panel": null,
+    "requires_private_data": true,
+    "source_notebook": "pancancer/pan_cancer.ipynb",
+    "source_cell": 8,
+    "manuscript_output_status": "Retained original PDF; not overwritten by this refactor",
+    "replay_validation": "Not executed: authorized patient inputs are not distributed; body migration and input mapping checked"
+  },
+  {
+    "folder": "pancancer",
+    "names": [
+      "ANOVA_six_class_ROC"
+    ],
+    "method": "ANOVA",
+    "script": "code/private_replay/plot_s6.py",
+    "original_notebook": "<STUDY_SOURCE>/pancancer/pan_cancer.ipynb",
+    "k": 10,
+    "canvas_inches": [
+      10.0,
+      8.0
+    ],
+    "font": "Arial",
+    "font_sizes_pt": [
+      10.0,
+      12.0
+    ],
+    "outputs": [
+      "figures/ANOVA_six_class_ROC.pdf"
+    ],
+    "notes": "仅六分类：标签0–5依次为Healthy(Control)、Breast、CRC、Gastric、Liver、Lung。主模型NeuralNetFastAI/ReliefF/K20；Fscore/ANOVA/Binomial补充ROC使用各方法内部验证选定的模型，只作候选展示。Figure2E/F采用全部458个唯一Test患者，六分类混淆矩阵包含Healthy。原癌症子矩阵的sklearn五标签归一化会排除预测Healthy者；新版先用六类矩阵按全部真实患者归一化，再截取癌症区域，确保误判Healthy仍进入分母。原图“Validation Accuracy”已明确为Test癌种准确率。原per_class_accuracy图保留其交叉二值指示变量accuracy含义，既非六类混淆矩阵，也不是各癌种对Healthy二分类。原ROC中按正负类别施加固定权重不改变曲线，已去除冗余评估权重以明确无权重。",
+    "prediction_source_policy": "only same-task none; apparent final training is not internal validation; no Test-based model selection",
+    "public_data": [
+      "figures/data/ANOVA/K_optimization.csv",
+      "figures/data/ANOVA/ROC_coordinates.csv",
+      "figures/data/ANOVA/selected_feature_scores.csv",
+      "results/holdout/all_none_inner_validation_metrics.csv"
+    ],
+    "private_inputs_not_distributed": [
+      "results/holdout/none/ANOVA/evaluation_predictions_*.csv",
+      "results/holdout/patient_split.csv",
+      "results/recovered_training_predictions/ANOVA/apparent_training_predictions_*.csv"
+    ],
+    "notebook_reference_scope": "Historical provenance only; runtime uses the semantic function above",
+    "function": "plot_multiclass_roc",
+    "kwargs": {},
+    "supplementary_figure": "S6",
+    "panel": null,
+    "requires_private_data": true,
+    "source_notebook": "pancancer/pan_cancer.ipynb",
+    "source_cell": 15,
+    "manuscript_output_status": "Retained original PDF; not overwritten by this refactor",
+    "replay_validation": "Not executed: authorized patient inputs are not distributed; body migration and input mapping checked"
+  },
+  {
+    "folder": "pancancer",
+    "names": [
+      "ReliefF_six_class_ROC"
+    ],
+    "method": "ReliefF",
+    "script": "code/private_replay/plot_s6.py",
+    "original_notebook": "<STUDY_SOURCE>/pancancer/pan_cancer.ipynb",
+    "k": 20,
+    "canvas_inches": [
+      10.0,
+      8.0
+    ],
+    "font": "Arial",
+    "font_sizes_pt": [
+      10.0,
+      12.0
+    ],
+    "outputs": [
+      "figures/ReliefF_six_class_ROC.pdf"
+    ],
+    "notes": "仅六分类：标签0–5依次为Healthy(Control)、Breast、CRC、Gastric、Liver、Lung。主模型NeuralNetFastAI/ReliefF/K20；Fscore/ANOVA/Binomial补充ROC使用各方法内部验证选定的模型，只作候选展示。Figure2E/F采用全部458个唯一Test患者，六分类混淆矩阵包含Healthy。原癌症子矩阵的sklearn五标签归一化会排除预测Healthy者；新版先用六类矩阵按全部真实患者归一化，再截取癌症区域，确保误判Healthy仍进入分母。原图“Validation Accuracy”已明确为Test癌种准确率。原per_class_accuracy图保留其交叉二值指示变量accuracy含义，既非六类混淆矩阵，也不是各癌种对Healthy二分类。原ROC中按正负类别施加固定权重不改变曲线，已去除冗余评估权重以明确无权重。",
+    "prediction_source_policy": "only same-task none; apparent final training is not internal validation; no Test-based model selection",
+    "public_data": [
+      "figures/data/ReliefF/K_optimization.csv",
+      "figures/data/ReliefF/ROC_coordinates.csv",
+      "figures/data/ReliefF/selected_feature_scores.csv",
+      "results/holdout/all_none_inner_validation_metrics.csv"
+    ],
+    "private_inputs_not_distributed": [
+      "results/holdout/none/ReliefF/evaluation_predictions_*.csv",
+      "results/holdout/patient_split.csv",
+      "results/recovered_training_predictions/ReliefF/apparent_training_predictions_*.csv"
+    ],
+    "notebook_reference_scope": "Historical provenance only; runtime uses the semantic function above",
+    "function": "plot_multiclass_roc",
+    "kwargs": {},
+    "supplementary_figure": "S6",
+    "panel": null,
+    "requires_private_data": true,
+    "source_notebook": "pancancer/pan_cancer.ipynb",
+    "source_cell": 22,
+    "manuscript_output_status": "Retained original PDF; not overwritten by this refactor",
+    "replay_validation": "Not executed: authorized patient inputs are not distributed; body migration and input mapping checked"
+  },
+  {
+    "folder": "pancancer",
+    "names": [
+      "per_class_accuracy_matrix_Test"
+    ],
+    "method": "ReliefF",
+    "script": "code/private_replay/plot_s6.py",
+    "original_notebook": "<STUDY_SOURCE>/pancancer/pan_cancer.ipynb",
+    "k": 20,
+    "canvas_inches": [
+      8.0,
+      7.0
+    ],
+    "font": "Arial",
+    "font_sizes_pt": [
+      10.0,
+      12.0,
+      15.0,
+      19.0
+    ],
+    "outputs": [
+      "figures/per_class_accuracy_matrix_Test.pdf"
+    ],
+    "notes": "仅六分类：标签0–5依次为Healthy(Control)、Breast、CRC、Gastric、Liver、Lung。主模型NeuralNetFastAI/ReliefF/K20；Fscore/ANOVA/Binomial补充ROC使用各方法内部验证选定的模型，只作候选展示。Figure2E/F采用全部458个唯一Test患者，六分类混淆矩阵包含Healthy。原癌症子矩阵的sklearn五标签归一化会排除预测Healthy者；新版先用六类矩阵按全部真实患者归一化，再截取癌症区域，确保误判Healthy仍进入分母。原图“Validation Accuracy”已明确为Test癌种准确率。原per_class_accuracy图保留其交叉二值指示变量accuracy含义，既非六类混淆矩阵，也不是各癌种对Healthy二分类。原ROC中按正负类别施加固定权重不改变曲线，已去除冗余评估权重以明确无权重。",
+    "prediction_source_policy": "only same-task none; apparent final training is not internal validation; no Test-based model selection",
+    "public_data": [
+      "figures/data/ReliefF/K_optimization.csv",
+      "figures/data/ReliefF/cancer_only_cross_indicator_accuracy_Test.csv",
+      "figures/data/ReliefF/selected_feature_scores.csv"
+    ],
+    "private_inputs_not_distributed": [
+      "results/holdout/none/ReliefF/evaluation_predictions_*.csv",
+      "results/holdout/patient_split.csv",
+      "results/recovered_training_predictions/ReliefF/apparent_training_predictions_*.csv"
+    ],
+    "notebook_reference_scope": "Historical provenance only; runtime uses the semantic function above",
+    "function": "plot_class_indicator_accuracy",
+    "kwargs": {
+      "dataset": "test"
+    },
+    "supplementary_figure": "S6",
+    "panel": null,
+    "requires_private_data": true,
+    "source_notebook": "pancancer/pan_cancer.ipynb",
+    "source_cell": 23,
+    "prior_replay_limitation": "An earlier packaging attempt lacked seaborn; its full traceback is retained in the internal archive.",
+    "manuscript_output_status": "Retained original PDF; not overwritten by this refactor",
+    "replay_validation": "Not executed: authorized patient inputs are not distributed; body migration and input mapping checked"
+  },
+  {
+    "folder": "pancancer",
+    "names": [
+      "per_class_accuracy_matrix_Train"
+    ],
+    "method": "ReliefF",
+    "script": "code/private_replay/plot_s6.py",
+    "original_notebook": "<STUDY_SOURCE>/pancancer/pan_cancer.ipynb",
+    "k": 20,
+    "canvas_inches": [
+      8.0,
+      7.0
+    ],
+    "font": "Arial",
+    "font_sizes_pt": [
+      10.0,
+      12.0,
+      15.0,
+      19.0
+    ],
+    "outputs": [
+      "figures/per_class_accuracy_matrix_Train.pdf"
+    ],
+    "notes": "仅六分类：标签0–5依次为Healthy(Control)、Breast、CRC、Gastric、Liver、Lung。主模型NeuralNetFastAI/ReliefF/K20；Fscore/ANOVA/Binomial补充ROC使用各方法内部验证选定的模型，只作候选展示。Figure2E/F采用全部458个唯一Test患者，六分类混淆矩阵包含Healthy。原癌症子矩阵的sklearn五标签归一化会排除预测Healthy者；新版先用六类矩阵按全部真实患者归一化，再截取癌症区域，确保误判Healthy仍进入分母。原图“Validation Accuracy”已明确为Test癌种准确率。原per_class_accuracy图保留其交叉二值指示变量accuracy含义，既非六类混淆矩阵，也不是各癌种对Healthy二分类。原ROC中按正负类别施加固定权重不改变曲线，已去除冗余评估权重以明确无权重。",
+    "prediction_source_policy": "only same-task none; apparent final training is not internal validation; no Test-based model selection",
+    "public_data": [
+      "figures/data/ReliefF/K_optimization.csv",
+      "figures/data/ReliefF/cancer_only_cross_indicator_accuracy_Train.csv",
+      "figures/data/ReliefF/selected_feature_scores.csv"
+    ],
+    "private_inputs_not_distributed": [
+      "results/holdout/none/ReliefF/evaluation_predictions_*.csv",
+      "results/holdout/patient_split.csv",
+      "results/recovered_training_predictions/ReliefF/apparent_training_predictions_*.csv"
+    ],
+    "notebook_reference_scope": "Historical provenance only; runtime uses the semantic function above",
+    "function": "plot_class_indicator_accuracy",
+    "kwargs": {
+      "dataset": "train"
+    },
+    "supplementary_figure": "S6",
+    "panel": null,
+    "requires_private_data": true,
+    "source_notebook": "pancancer/pan_cancer.ipynb",
+    "source_cell": 24,
+    "prior_replay_limitation": "An earlier packaging attempt lacked seaborn; its full traceback is retained in the internal archive.",
+    "manuscript_output_status": "Retained original PDF; not overwritten by this refactor",
+    "replay_validation": "Not executed: authorized patient inputs are not distributed; body migration and input mapping checked"
+  },
+  {
+    "folder": "pancancer",
+    "names": [
+      "confusion_matrix_cancer_only_final"
+    ],
+    "method": "ReliefF",
+    "script": "code/private_replay/plot_s6.py",
+    "original_notebook": "<STUDY_SOURCE>/pancancer/pan_cancer.ipynb",
+    "k": 20,
+    "canvas_inches": [
+      8.0,
+      7.0
+    ],
+    "font": "Arial",
+    "font_sizes_pt": [
+      10.0,
+      12.0,
+      14.0
+    ],
+    "outputs": [
+      "figures/confusion_matrix_cancer_only_final.pdf"
+    ],
+    "notes": "仅六分类：标签0–5依次为Healthy(Control)、Breast、CRC、Gastric、Liver、Lung。主模型NeuralNetFastAI/ReliefF/K20；Fscore/ANOVA/Binomial补充ROC使用各方法内部验证选定的模型，只作候选展示。Figure2E/F采用全部458个唯一Test患者，六分类混淆矩阵包含Healthy。原癌症子矩阵的sklearn五标签归一化会排除预测Healthy者；新版先用六类矩阵按全部真实患者归一化，再截取癌症区域，确保误判Healthy仍进入分母。原图“Validation Accuracy”已明确为Test癌种准确率。原per_class_accuracy图保留其交叉二值指示变量accuracy含义，既非六类混淆矩阵，也不是各癌种对Healthy二分类。原ROC中按正负类别施加固定权重不改变曲线，已去除冗余评估权重以明确无权重。",
+    "prediction_source_policy": "only same-task none; apparent final training is not internal validation; no Test-based model selection",
+    "public_data": [
+      "figures/data/ReliefF/K_optimization.csv",
+      "figures/data/ReliefF/cancer_only_confusion_normalized_all_true_cancer_patients.csv",
+      "figures/data/ReliefF/selected_feature_scores.csv"
+    ],
+    "private_inputs_not_distributed": [
+      "results/holdout/none/ReliefF/evaluation_predictions_*.csv",
+      "results/holdout/patient_split.csv",
+      "results/recovered_training_predictions/ReliefF/apparent_training_predictions_*.csv"
+    ],
+    "notebook_reference_scope": "Historical provenance only; runtime uses the semantic function above",
+    "function": "plot_cancer_confusion_matrix",
+    "kwargs": {},
+    "supplementary_figure": "S6",
+    "panel": null,
+    "requires_private_data": true,
+    "source_notebook": "pancancer/pan_cancer.ipynb",
+    "source_cell": 25,
+    "prior_replay_limitation": "An earlier packaging attempt lacked seaborn; its full traceback is retained in the internal archive.",
+    "manuscript_output_status": "Retained original PDF; not overwritten by this refactor",
+    "replay_validation": "Not executed: authorized patient inputs are not distributed; body migration and input mapping checked"
+  },
+  {
+    "folder": "pancancer",
+    "names": [
+      "Binomial_six_class_ROC"
+    ],
+    "method": "Binomial",
+    "script": "code/private_replay/plot_s6.py",
+    "original_notebook": "<STUDY_SOURCE>/pancancer/pan_cancer.ipynb",
+    "k": 118,
+    "canvas_inches": [
+      10.0,
+      8.0
+    ],
+    "font": "Arial",
+    "font_sizes_pt": [
+      10.0,
+      12.0
+    ],
+    "outputs": [
+      "figures/Binomial_six_class_ROC.pdf"
+    ],
+    "notes": "仅六分类：标签0–5依次为Healthy(Control)、Breast、CRC、Gastric、Liver、Lung。主模型NeuralNetFastAI/ReliefF/K20；Fscore/ANOVA/Binomial补充ROC使用各方法内部验证选定的模型，只作候选展示。Figure2E/F采用全部458个唯一Test患者，六分类混淆矩阵包含Healthy。原癌症子矩阵的sklearn五标签归一化会排除预测Healthy者；新版先用六类矩阵按全部真实患者归一化，再截取癌症区域，确保误判Healthy仍进入分母。原图“Validation Accuracy”已明确为Test癌种准确率。原per_class_accuracy图保留其交叉二值指示变量accuracy含义，既非六类混淆矩阵，也不是各癌种对Healthy二分类。原ROC中按正负类别施加固定权重不改变曲线，已去除冗余评估权重以明确无权重。",
+    "prediction_source_policy": "only same-task none; apparent final training is not internal validation; no Test-based model selection",
+    "public_data": [
+      "figures/data/Binomial/K_optimization.csv",
+      "figures/data/Binomial/ROC_coordinates.csv",
+      "figures/data/Binomial/selected_feature_scores.csv",
+      "results/holdout/all_none_inner_validation_metrics.csv"
+    ],
+    "private_inputs_not_distributed": [
+      "results/holdout/none/Binomial/evaluation_predictions_*.csv",
+      "results/holdout/patient_split.csv",
+      "results/recovered_training_predictions/Binomial/apparent_training_predictions_*.csv"
+    ],
+    "notebook_reference_scope": "Historical provenance only; runtime uses the semantic function above",
+    "function": "plot_multiclass_roc",
+    "kwargs": {},
+    "supplementary_figure": "S6",
+    "panel": null,
+    "requires_private_data": true,
+    "source_notebook": "pancancer/pan_cancer.ipynb",
+    "source_cell": 33,
+    "manuscript_output_status": "Retained original PDF; not overwritten by this refactor",
+    "replay_validation": "Not executed: authorized patient inputs are not distributed; body migration and input mapping checked"
+  },
+  {
+    "folder": "pancancer",
+    "names": [
+      "pancancer-ReliefF-Proportion of Biomaker"
+    ],
+    "method": "ReliefF",
+    "script": "code/private_replay/plot_s6.py",
+    "original_notebook": "<STUDY_SOURCE>/pancancer/pan_cancer.ipynb",
+    "k": 20,
+    "canvas_inches": [
+      10.0,
+      8.0
+    ],
+    "font": "Arial",
+    "font_sizes_pt": [
+      17.0,
+      18.0,
+      24.0
+    ],
+    "outputs": [
+      "figures/pancancer-ReliefF-Proportion of Biomaker.pdf"
+    ],
+    "notes": "仅六分类：标签0–5依次为Healthy(Control)、Breast、CRC、Gastric、Liver、Lung。主模型NeuralNetFastAI/ReliefF/K20；Fscore/ANOVA/Binomial补充ROC使用各方法内部验证选定的模型，只作候选展示。Figure2E/F采用全部458个唯一Test患者，六分类混淆矩阵包含Healthy。原癌症子矩阵的sklearn五标签归一化会排除预测Healthy者；新版先用六类矩阵按全部真实患者归一化，再截取癌症区域，确保误判Healthy仍进入分母。原图“Validation Accuracy”已明确为Test癌种准确率。原per_class_accuracy图保留其交叉二值指示变量accuracy含义，既非六类混淆矩阵，也不是各癌种对Healthy二分类。原ROC中按正负类别施加固定权重不改变曲线，已去除冗余评估权重以明确无权重。",
+    "prediction_source_policy": "only same-task none; apparent final training is not internal validation; no Test-based model selection",
+    "public_data": [
+      "figures/data/ReliefF/K_optimization.csv",
+      "figures/data/ReliefF/selected_feature_scores.csv"
+    ],
+    "private_inputs_not_distributed": [],
+    "notebook_reference_scope": "Historical provenance only; runtime uses the semantic function above",
+    "function": "plot_feature_family_composition",
+    "kwargs": {},
+    "supplementary_figure": "S6",
+    "panel": null,
+    "requires_private_data": false,
+    "source_notebook": "pancancer/pan_cancer.ipynb",
+    "source_cell": 35,
+    "manuscript_output_status": "Retained original PDF; not overwritten by this refactor",
+    "replay_validation": "Executed on real public feature/K inputs; PNG pixels equal the pre-refactor source rendering"
+  },
+  {
+    "folder": "pancancer",
+    "names": [
+      "AUC_vs_FeatureCount_Fscore6"
+    ],
+    "method": "Fscore",
+    "script": "code/private_replay/plot_s6.py",
+    "original_notebook": "<STUDY_SOURCE>/pancancer/pan_feature_screening.ipynb",
+    "k": 165,
+    "canvas_inches": [
+      10.0,
+      6.0
+    ],
+    "font": "Arial",
+    "font_sizes_pt": [
+      10.0,
+      12.0
+    ],
+    "outputs": [
+      "figures/AUC_vs_FeatureCount_Fscore6.pdf"
+    ],
+    "notes": "仅六分类：标签0–5依次为Healthy(Control)、Breast、CRC、Gastric、Liver、Lung。主模型NeuralNetFastAI/ReliefF/K20；Fscore/ANOVA/Binomial补充ROC使用各方法内部验证选定的模型，只作候选展示。Figure2E/F采用全部458个唯一Test患者，六分类混淆矩阵包含Healthy。原癌症子矩阵的sklearn五标签归一化会排除预测Healthy者；新版先用六类矩阵按全部真实患者归一化，再截取癌症区域，确保误判Healthy仍进入分母。原图“Validation Accuracy”已明确为Test癌种准确率。原per_class_accuracy图保留其交叉二值指示变量accuracy含义，既非六类混淆矩阵，也不是各癌种对Healthy二分类。原ROC中按正负类别施加固定权重不改变曲线，已去除冗余评估权重以明确无权重。",
+    "prediction_source_policy": "only same-task none; apparent final training is not internal validation; no Test-based model selection",
+    "public_data": [
+      "figures/data/Fscore/K_optimization.csv",
+      "figures/data/Fscore/selected_feature_scores.csv"
+    ],
+    "private_inputs_not_distributed": [],
+    "notebook_reference_scope": "Historical provenance only; runtime uses the semantic function above",
+    "function": "plot_method_feature_count_curve",
+    "kwargs": {},
+    "supplementary_figure": "S6",
+    "panel": null,
+    "requires_private_data": false,
+    "source_notebook": "pancancer/pan_feature_screening.ipynb",
+    "source_cell": 12,
+    "manuscript_output_status": "Retained original PDF; not overwritten by this refactor",
+    "replay_validation": "Executed on real public feature/K inputs; PNG pixels equal the pre-refactor source rendering"
+  },
+  {
+    "folder": "pancancer",
+    "names": [
+      "AUC_vs_FeatureCount_ANOVA6"
+    ],
+    "method": "ANOVA",
+    "script": "code/private_replay/plot_s6.py",
+    "original_notebook": "<STUDY_SOURCE>/pancancer/pan_feature_screening.ipynb",
+    "k": 10,
+    "canvas_inches": [
+      10.0,
+      6.0
+    ],
+    "font": "Arial",
+    "font_sizes_pt": [
+      10.0,
+      12.0
+    ],
+    "outputs": [
+      "figures/AUC_vs_FeatureCount_ANOVA6.pdf"
+    ],
+    "notes": "仅六分类：标签0–5依次为Healthy(Control)、Breast、CRC、Gastric、Liver、Lung。主模型NeuralNetFastAI/ReliefF/K20；Fscore/ANOVA/Binomial补充ROC使用各方法内部验证选定的模型，只作候选展示。Figure2E/F采用全部458个唯一Test患者，六分类混淆矩阵包含Healthy。原癌症子矩阵的sklearn五标签归一化会排除预测Healthy者；新版先用六类矩阵按全部真实患者归一化，再截取癌症区域，确保误判Healthy仍进入分母。原图“Validation Accuracy”已明确为Test癌种准确率。原per_class_accuracy图保留其交叉二值指示变量accuracy含义，既非六类混淆矩阵，也不是各癌种对Healthy二分类。原ROC中按正负类别施加固定权重不改变曲线，已去除冗余评估权重以明确无权重。",
+    "prediction_source_policy": "only same-task none; apparent final training is not internal validation; no Test-based model selection",
+    "public_data": [
+      "figures/data/ANOVA/K_optimization.csv",
+      "figures/data/ANOVA/selected_feature_scores.csv"
+    ],
+    "private_inputs_not_distributed": [],
+    "notebook_reference_scope": "Historical provenance only; runtime uses the semantic function above",
+    "function": "plot_method_feature_count_curve",
+    "kwargs": {},
+    "supplementary_figure": "S6",
+    "panel": null,
+    "requires_private_data": false,
+    "source_notebook": "pancancer/pan_feature_screening.ipynb",
+    "source_cell": 21,
+    "manuscript_output_status": "Retained original PDF; not overwritten by this refactor",
+    "replay_validation": "Executed on real public feature/K inputs; PNG pixels equal the pre-refactor source rendering"
+  },
+  {
+    "folder": "pancancer",
+    "names": [
+      "AUC_vs_FeatureCount_ReliefF_pan6"
+    ],
+    "method": "ReliefF",
+    "script": "code/private_replay/plot_s6.py",
+    "original_notebook": "<STUDY_SOURCE>/pancancer/pan_feature_screening.ipynb",
+    "k": 20,
+    "canvas_inches": [
+      9.0,
+      7.0
+    ],
+    "font": "Arial",
+    "font_sizes_pt": [
+      10.0,
+      15.0,
+      19.0,
+      24.0
+    ],
+    "outputs": [
+      "figures/AUC_vs_FeatureCount_ReliefF_pan6.pdf"
+    ],
+    "notes": "仅六分类：标签0–5依次为Healthy(Control)、Breast、CRC、Gastric、Liver、Lung。主模型NeuralNetFastAI/ReliefF/K20；Fscore/ANOVA/Binomial补充ROC使用各方法内部验证选定的模型，只作候选展示。Figure2E/F采用全部458个唯一Test患者，六分类混淆矩阵包含Healthy。原癌症子矩阵的sklearn五标签归一化会排除预测Healthy者；新版先用六类矩阵按全部真实患者归一化，再截取癌症区域，确保误判Healthy仍进入分母。原图“Validation Accuracy”已明确为Test癌种准确率。原per_class_accuracy图保留其交叉二值指示变量accuracy含义，既非六类混淆矩阵，也不是各癌种对Healthy二分类。原ROC中按正负类别施加固定权重不改变曲线，已去除冗余评估权重以明确无权重。",
+    "prediction_source_policy": "only same-task none; apparent final training is not internal validation; no Test-based model selection",
+    "public_data": [
+      "figures/data/ReliefF/K_optimization.csv",
+      "figures/data/ReliefF/selected_feature_scores.csv"
+    ],
+    "private_inputs_not_distributed": [],
+    "notebook_reference_scope": "Historical provenance only; runtime uses the semantic function above",
+    "function": "plot_relieff_feature_count_curve",
+    "kwargs": {},
+    "supplementary_figure": "S6",
+    "panel": null,
+    "requires_private_data": false,
+    "source_notebook": "pancancer/pan_feature_screening.ipynb",
+    "source_cell": 29,
+    "manuscript_output_status": "Retained original PDF; not overwritten by this refactor",
+    "replay_validation": "Executed on real public feature/K inputs; PNG pixels equal the pre-refactor source rendering"
+  },
+  {
+    "folder": "pancancer",
+    "names": [
+      "FeatureCount-pink"
+    ],
+    "method": "ReliefF",
+    "script": "code/private_replay/plot_s6.py",
+    "original_notebook": "<STUDY_SOURCE>/pancancer/pan_feature_screening.ipynb",
+    "k": 20,
+    "canvas_inches": [
+      9.0,
+      7.0
+    ],
+    "font": "Arial",
+    "font_sizes_pt": [
+      10.0,
+      15.0,
+      19.0,
+      24.0
+    ],
+    "outputs": [
+      "figures/FeatureCount-pink.pdf"
+    ],
+    "notes": "仅六分类：标签0–5依次为Healthy(Control)、Breast、CRC、Gastric、Liver、Lung。主模型NeuralNetFastAI/ReliefF/K20；Fscore/ANOVA/Binomial补充ROC使用各方法内部验证选定的模型，只作候选展示。Figure2E/F采用全部458个唯一Test患者，六分类混淆矩阵包含Healthy。原癌症子矩阵的sklearn五标签归一化会排除预测Healthy者；新版先用六类矩阵按全部真实患者归一化，再截取癌症区域，确保误判Healthy仍进入分母。原图“Validation Accuracy”已明确为Test癌种准确率。原per_class_accuracy图保留其交叉二值指示变量accuracy含义，既非六类混淆矩阵，也不是各癌种对Healthy二分类。原ROC中按正负类别施加固定权重不改变曲线，已去除冗余评估权重以明确无权重。",
+    "prediction_source_policy": "only same-task none; apparent final training is not internal validation; no Test-based model selection",
+    "public_data": [
+      "figures/data/ReliefF/K_optimization.csv",
+      "figures/data/ReliefF/selected_feature_scores.csv"
+    ],
+    "private_inputs_not_distributed": [],
+    "notebook_reference_scope": "Historical provenance only; runtime uses the semantic function above",
+    "function": "plot_relieff_validation_feature_count",
+    "kwargs": {},
+    "supplementary_figure": "S6",
+    "panel": null,
+    "requires_private_data": false,
+    "source_notebook": "pancancer/pan_feature_screening.ipynb",
+    "source_cell": 30,
+    "manuscript_output_status": "Retained original PDF; not overwritten by this refactor",
+    "replay_validation": "Executed on real public feature/K inputs; PNG pixels equal the pre-refactor source rendering"
+  },
+  {
+    "folder": "pancancer",
+    "names": [
+      "AUC_vs_FeatureCount_Binomial6"
+    ],
+    "method": "Binomial",
+    "script": "code/private_replay/plot_s6.py",
+    "original_notebook": "<STUDY_SOURCE>/pancancer/pan_feature_screening.ipynb",
+    "k": 118,
+    "canvas_inches": [
+      10.0,
+      6.0
+    ],
+    "font": "Arial",
+    "font_sizes_pt": [
+      10.0,
+      12.0
+    ],
+    "outputs": [
+      "figures/AUC_vs_FeatureCount_Binomial6.pdf"
+    ],
+    "notes": "仅六分类：标签0–5依次为Healthy(Control)、Breast、CRC、Gastric、Liver、Lung。主模型NeuralNetFastAI/ReliefF/K20；Fscore/ANOVA/Binomial补充ROC使用各方法内部验证选定的模型，只作候选展示。Figure2E/F采用全部458个唯一Test患者，六分类混淆矩阵包含Healthy。原癌症子矩阵的sklearn五标签归一化会排除预测Healthy者；新版先用六类矩阵按全部真实患者归一化，再截取癌症区域，确保误判Healthy仍进入分母。原图“Validation Accuracy”已明确为Test癌种准确率。原per_class_accuracy图保留其交叉二值指示变量accuracy含义，既非六类混淆矩阵，也不是各癌种对Healthy二分类。原ROC中按正负类别施加固定权重不改变曲线，已去除冗余评估权重以明确无权重。",
+    "prediction_source_policy": "only same-task none; apparent final training is not internal validation; no Test-based model selection",
+    "public_data": [
+      "figures/data/Binomial/K_optimization.csv",
+      "figures/data/Binomial/selected_feature_scores.csv"
+    ],
+    "private_inputs_not_distributed": [],
+    "notebook_reference_scope": "Historical provenance only; runtime uses the semantic function above",
+    "function": "plot_method_feature_count_curve",
+    "kwargs": {},
+    "supplementary_figure": "S6",
+    "panel": null,
+    "requires_private_data": false,
+    "source_notebook": "pancancer/pan_feature_screening.ipynb",
+    "source_cell": 38,
+    "manuscript_output_status": "Retained original PDF; not overwritten by this refactor",
+    "replay_validation": "Executed on real public feature/K inputs; PNG pixels equal the pre-refactor source rendering"
+  }
+]

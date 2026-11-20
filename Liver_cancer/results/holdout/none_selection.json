@@ -1,0 +1,15 @@
+{
+  "AUC": 0.9300403225806451,
+  "AUPRC": 0.6797049608499188,
+  "Recall": 0.35,
+  "Specificity": 1.0,
+  "Accuracy": 0.9514925373134329,
+  "Precision": 1.0,
+  "F1": 0.5185185185185185,
+  "task": "liver",
+  "context": "holdout",
+  "strategy": "none",
+  "method": "ReliefF",
+  "model": "WeightedEnsemble_L2",
+  "k": 19
+}

@@ -1,0 +1,12 @@
+{
+  "task": "crc",
+  "strategy": "none",
+  "method": "ReliefF",
+  "k": 121,
+  "internally_selected_model": "NeuralNetFastAI",
+  "refit_model": "NeuralNetFastAI_FULL",
+  "hyperparameters_and_trained_parameters": "holdout/none/ReliefF/fitted_model_parameters.json",
+  "inner_parameters": "holdout/none/ReliefF/fitted_inner_model_parameters.json",
+  "selection": "holdout/none_selection.json",
+  "raw_data_environment": "CFDNA_RAW"
+}

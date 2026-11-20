@@ -1,0 +1,19 @@
+{
+  "AUC": 0.9221034598574925,
+  "AUPRC": 0.808428316592766,
+  "Recall": 0.5133632447851463,
+  "Specificity": 0.967741935483871,
+  "Accuracy": 0.7841530054644809,
+  "Precision": 0.5751178391910657,
+  "F1": 0.531807385414301,
+  "macro_AUC": 0.8973389927036282,
+  "macro_AUPRC": 0.570613585977765,
+  "cancer_detection_Recall": 0.6949152542372882,
+  "cancer_exact_type_Recall": 0.3983050847457627,
+  "task": "pan6",
+  "context": "holdout",
+  "strategy": "none",
+  "method": "ReliefF",
+  "model": "NeuralNetFastAI",
+  "k": 20
+}

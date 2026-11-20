@@ -1,0 +1,4 @@
+task,fold,method,k,model,inner_validation_AUC
+breast,0,ReliefF,15,WeightedEnsemble_L2,0.9133838383838384
+breast,1,ReliefF,10,WeightedEnsemble_L2,0.9353535353535354
+breast,2,ReliefF,59,WeightedEnsemble_L2,0.9751506024096386

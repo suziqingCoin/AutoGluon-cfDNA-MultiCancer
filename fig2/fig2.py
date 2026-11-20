@@ -1,7 +1,7 @@
-"""Reproduce Figure 2 A-F from the tab-separated plotting inputs in this folder, without training or re-estimation.
+"""Reproduce Figure 2 A-F from public aggregates without training.
 
-Input TXT files and output PDFs share this directory, following the reference fig-folder layout.
-Usage: python fig2.py [--output-dir PATH] [--font Arial]
+Generated inputs and redraws default to fig2/reproduced/; manuscript PDFs stay unchanged.
+Usage: python fig2/fig2.py [--input-dir PATH] [--output-dir PATH] [--font Arial]
 """
 from pathlib import Path
 from decimal import Decimal, ROUND_HALF_UP
@@ -16,7 +16,7 @@ from matplotlib.patches import Patch, Rectangle
 from matplotlib.colors import LinearSegmentedColormap, Normalize
 from matplotlib.cm import ScalarMappable
 ROOT = Path(__file__).resolve().parent
-DATA = ROOT
+DATA = ROOT / "reproduced"
 CANCERS = ['Lung', 'Breast', 'Colorectal', 'Liver', 'Gastric']
 CLASSES = ['Healthy', 'Breast', 'CRC', 'Gastric', 'Liver', 'Lung']
 CATEGORIES = ['EM', 'CNA', 'TMD', 'GWMD', 'GWFP', 'FLEN']
@@ -36,9 +36,14 @@ def configure(font='Arial'):
     return selected
 
 def read_table(name, **kwargs):
-    return pd.read_csv(ROOT / name, sep='\t', **kwargs)
+    return pd.read_csv(DATA / name, sep='\t', **kwargs)
 
-def read_inputs():
+def read_inputs(input_dir=None):
+    global DATA
+    DATA = Path(input_dir) if input_dir is not None else ROOT / 'reproduced'
+    if input_dir is None and not (DATA / 'feature_composition.txt').exists():
+        from prepare_fig2_inputs import main as prepare
+        prepare(DATA)
     a = read_table('feature_composition.txt').set_index('Cancer').loc[CANCERS].reset_index()
     b = read_table('binary_test_auc.txt').set_index('Cancer').loc[CANCERS].reset_index()
     cd = read_table('loocv_early_stage.txt')
@@ -64,7 +69,9 @@ def panel_A(fig, cell, data):
         ax.barh(y,pct[:,j],left=left,height=.64,color=FEATURE_COLORS[j],edgecolor='white',linewidth=.4)
         left+=pct[:,j]
     for i in y:
-        ax.text(pct[i,0]/2,i,f'{pct[i,0]:.1f}%',ha='center',va='center',fontsize=7.5,color='white')
+        j = int(np.argmax(pct[i]))
+        center = pct[i,:j].sum() + pct[i,j]/2
+        ax.text(center,i,f'{pct[i,j]:.1f}%',ha='center',va='center',fontsize=7.5,color='white')
         ax.text(1.025,i,f'n = {d.Selected_features.iloc[i]}',transform=ax.get_yaxis_transform(),va='center',fontsize=7)
     ax.set(ylim=(4.6,-.6),xlim=(0,100),xlabel='Percentage of selected features (%)')
     ax.set_yticks(y,CANCERS); ax.set_xticks([0,25,50,75,100]); ax.tick_params(axis='y',length=0,pad=6)
@@ -76,22 +83,23 @@ def panel_A(fig, cell, data):
         handlelength=1,handletextpad=.4,columnspacing=1.1,labelspacing=.6,borderaxespad=0)
     return ax
 
-# B. Original binary test AUCs, shown as the vertical lollipop used in the manuscript.
+# B. Revised no-resampling binary Test AUCs with conditional bootstrap 95% CI.
 def panel_B(fig, cell, data):
     ax=axes_in(fig,cell,[.24,.39,.65,.52]); v=data['B'].Test_AUC.to_numpy(); x=np.arange(5)
-    ax.vlines(x,.90,v,color='#9EB7C6',lw=1.4); ax.scatter(x,v,s=24,color='#193B58',zorder=3)
-    ax.set(ylim=(.90,1.006),xlim=(-.6,4.6),ylabel='Test ROC AUC')
-    ax.set_yticks([.90,.95,1],['0.90','0.95','1.00'])
+    ax.vlines(x,0,v,color='#9EB7C6',lw=1.4); ax.scatter(x,v,s=6,color='#193B58',zorder=5,clip_on=False)
+    ax.errorbar(x,v,yerr=np.vstack([v-data['B'].AUC_CI_low.to_numpy(),data['B'].AUC_CI_high.to_numpy()-v]),fmt='none',ecolor='#193B58',elinewidth=1.0,capsize=3,capthick=1.0,zorder=6,clip_on=False)
+    ax.set(ylim=(0,1),xlim=(-.6,4.6),ylabel='Test ROC AUC')
+    ax.set_yticks([0,.2,.4,.6,.8,1])
     ax.set_xticks(x,CANCERS,rotation=42,ha='right',rotation_mode='anchor')
-    for i,value in enumerate(v):ax.annotate(f'{value:.4f}',(i,value),xytext=(0,5),textcoords='offset points',ha='center',fontsize=7,color='#193B58')
+    for i,value in enumerate(v):ax.annotate(f'{value:.4f}',(i,value),xytext=(0,-12),textcoords='offset points',ha='center',fontsize=7,color='#193B58')
     for s in ['top','right']:ax.spines[s].set_visible(False)
     return ax
 
-# C. Frozen LOOCV AUC estimates and the original precomputed confidence intervals.
+# C. Revised pooled Nested LOOCV AUC and conditional patient-bootstrap intervals.
 def panel_C(fig, cell, data):
     return forest(fig,cell,data,'C')
 
-# D. Frozen stage I+II sensitivity at target 95% specificity (original achieved values in CSV).
+# D. Exploratory stage I+II sensitivity using retrospective pooled OOF-control thresholds.
 def panel_D(fig, cell, data):
     return forest(fig,cell,data,'D')
 
@@ -126,7 +134,7 @@ def panel_E(fig, cell, data):
     ax.legend(loc='lower right',frameon=False,fontsize=5.7,handlelength=1.7,labelspacing=.18,borderaxespad=.25,handletextpad=.5)
     return ax
 
-# F. Original test confusion counts and percentages normalized WITHIN each true class.
+# F. Revised six-class Test counts and percentages within each true class.
 def panel_F(fig, cell, data):
     ax=axes_in(fig,cell,[.29,.24,.50,.70]); counts=data['F'].to_numpy(); norm=counts/counts.sum(1,keepdims=True)
     cmap=LinearSegmentedColormap.from_list('paper_teal',['#f4f7f7','#d8e9e7','#9dc9c5','#549c9d','#286d7c','#194455'])
@@ -157,11 +165,8 @@ def validate_data(data):
     for cancer,row in a.set_index('Cancer').iterrows():
         n=selected[selected.Cancer.eq(cancer)].Category.value_counts()
         assert all(n.get(k,0)==row[k] for k in CATEGORIES)
-    assert np.allclose(data['B'].Test_AUC,[.9747474747474748,.9614814814814816,.9833984375,.9922948771345272,.9782051282051282])
     cd=data['CD']; assert ((cd.CI_lower<=cd.Estimate)&(cd.Estimate<=cd.CI_upper)).all()
-    assert np.allclose(cd[cd.Panel.eq('C')].Estimate,[.9077561669829224,.962962534355562,.9445810509231082,.929304600740349,.8725543120473996])
-    assert np.allclose(cd[cd.Panel.eq('D')].Estimate,[56.25,80.625,600/7,2300/37,1200/23])
-    counts=data['F'].to_numpy(); assert counts.sum()==294
+    counts=data['F'].to_numpy(); assert counts.sum()==458
     norm=counts/counts.sum(1,keepdims=True)
     original=read_table('confusion_row_normalized.txt',index_col=0)
     assert np.allclose(norm,original.to_numpy())
@@ -169,7 +174,7 @@ def validate_data(data):
     areas={}
     for name in CLASSES:
         d=data['E'][data['E'].Class.eq(name)];assert (np.diff(d.FPR)>=0).all() and (np.diff(d.TPR)>=0).all()
-        area=float(np.trapezoid(d.TPR,d.FPR));assert np.isclose(area,data['E_AUC'].loc[name,'OvR_AUC'],atol=1e-12);areas[name]=area
+        area=float(np.sum(np.diff(d.FPR.to_numpy()) * (d.TPR.to_numpy()[1:] + d.TPR.to_numpy()[:-1]) / 2));assert np.isclose(area,data['E_AUC'].loc[name,'OvR_AUC'],atol=1e-12);areas[name]=area
     return dict(panel_order=list('ABCDEF'),feature_totals=a.Selected_features.tolist(),binary_test_auc=data['B'].Test_AUC.tolist(),roc_AUC_integral=areas,confusion_total=int(counts.sum()),all_data_checks_pass=True)
 
 def save_pdf(fig,path):
@@ -186,15 +191,17 @@ def save_pdf(fig,path):
 
 def main(argv=None):
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--output-dir',type=Path,default=ROOT);parser.add_argument('--font',default='Arial')
+    parser.add_argument('--input-dir',type=Path)
+    parser.add_argument('--output-dir',type=Path,default=ROOT/'reproduced');parser.add_argument('--font',default='Arial')
     args=parser.parse_args(argv);args.output_dir.mkdir(parents=True,exist_ok=True)
-    font=configure(args.font);data=read_inputs();checks=validate_data(data)
+    font=configure(args.font);data=read_inputs(args.input_dir);checks=validate_data(data)
     for letter in 'ABCDEF':save_pdf(make_single(letter,data),args.output_dir/(STEMS[letter]+'.pdf'))
     fig=plt.figure(figsize=(186/25.4,170/25.4))
     for i,letter in enumerate('ABCDEF'):
         cell=((i%2)*.5,(2-i//2)/3,.5,1/3)
         PANELS[letter](fig,cell,data);mark_panel(fig,cell,letter)
     save_pdf(fig,args.output_dir/'Figure2_Combined.pdf')
-    checks.update(font=font,requested_font=args.font,python=platform.python_version(),numpy=np.__version__,pandas=pd.__version__,matplotlib=matplotlib.__version__,combined_size_mm=[186,170],outputs=7)
+    checks.update(nested_loocv_auc=data['CD'].query("Panel == 'C'").Estimate.tolist(),early_stage_sensitivity_percent=data['CD'].query("Panel == 'D'").Estimate.tolist(),font=font,requested_font=args.font,python=platform.python_version(),numpy=np.__version__,pandas=pd.__version__,matplotlib=matplotlib.__version__,combined_size_mm=[186,170],outputs=7)
+    (args.output_dir/'validation_report.json').write_text(json.dumps(checks,indent=2)+'\n')
     print('Generated 6 panel PDFs and Figure2_Combined.pdf in',args.output_dir)
 if __name__=='__main__':main()

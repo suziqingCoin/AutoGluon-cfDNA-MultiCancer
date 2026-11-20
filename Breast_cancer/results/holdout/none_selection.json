@@ -1,0 +1,15 @@
+{
+  "AUC": 0.9685259856630825,
+  "AUPRC": 0.8800210161754773,
+  "Recall": 0.5555555555555556,
+  "Specificity": 1.0,
+  "Accuracy": 0.9436619718309859,
+  "Precision": 1.0,
+  "F1": 0.7142857142857143,
+  "task": "breast",
+  "context": "holdout",
+  "strategy": "none",
+  "method": "ANOVA",
+  "model": "WeightedEnsemble_L2",
+  "k": 151
+}

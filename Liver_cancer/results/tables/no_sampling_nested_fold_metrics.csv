@@ -1,0 +1,4 @@
+AUC,AUPRC,Recall,Specificity,Accuracy,Precision,F1,task,context,strategy,method,model,k,selected_for_strategy,historical_cross_strategy_selected,macro_AUC,macro_AUPRC,cancer_detection_Recall,cancer_exact_type_Recall,selected_final_none
+0.8520801232665639,0.5475517242738538,0.303030303030303,0.9951573849878934,0.9439461883408072,0.8333333333333334,0.4444444444444444,liver,nested_fold_0,none,ANOVA,WeightedEnsemble_L2,37,True,True,,,,,True
+0.9575904321667036,0.7687547021398213,0.6060606060606061,0.9854721549636803,0.9573991031390134,0.7692307692307693,0.6779661016949152,liver,nested_fold_1,none,ReliefF,NeuralNetFastAI,18,True,True,,,,,True
+0.9182808716707022,0.6246381400013562,0.5,0.9830508474576272,0.9483146067415732,0.6956521739130435,0.5818181818181818,liver,nested_fold_2,none,ReliefF,WeightedEnsemble_L2,7,True,True,,,,,True

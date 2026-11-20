@@ -1,0 +1,2 @@
+task,task_cn,method,model,k,ranking_fit_n,inner_validation_n,final_training_n,test_n,validation_AUC,validation_AUPRC,validation_Recall,validation_Specificity
+lung,肺癌,ReliefF,WeightedEnsemble_L2,149,1078,270,1348,338,0.9506964809384164,0.7866669996998412,0.5909090909090909,0.9919354838709676
